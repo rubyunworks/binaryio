@@ -1,0 +1,12 @@
+= CHANGE HISTORY
+
+== 1.0.0 / 2009-07-04
+
+This is the initial standalone release of BinaryIO,
+spun-off from the Ruby Facets library BinReadable,
+which came form an earlier library called BinaryReader
+by Michael Neumann.
+
+* 1 Major Enhancement
+
+    * Happy Birthday!

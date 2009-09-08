@@ -1,0 +1,30 @@
+= BinaryIO
+
+* http://death.rubyforge.org
+* http://death.rubyforge.org/binaryio
+
+
+== DESCRIPTION
+
+Provides a BinaryIO class as well as a reusable mixin, BinaryIO::Readable, whuch
+is the heart of the BinaryIO class itself. The mixin solely depends one method, #read(n),
+which must be defined in the class/module where the module is mixed.
+
+
+== SYNOPSIS
+
+  ... to do ...
+
+
+== HOW TO INSTALL
+
+  $ gem install binaryio
+
+
+== COPYING
+
+LPGLv3 License
+
+Copyright (c) 2009 Coding Dead
+Copyright (c) 2003 Michael Neumann
+
