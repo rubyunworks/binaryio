@@ -1,7 +1,7 @@
 = BinaryIO
 
-* http://death.rubyforge.org
-* http://death.rubyforge.org/binaryio
+* http://rubyworks.rubyforge.org/binaryio
+* http://death.rubyforge.org/binaryio (old site)
 
 
 == DESCRIPTION
