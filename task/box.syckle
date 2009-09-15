@@ -1,5 +1,5 @@
 ---
-rubygems:
+box:
   service: Box
   active : true
   types  : [gem, tar]
