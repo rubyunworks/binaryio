@@ -1,0 +1,18 @@
+--- 
+title     : BinaryIO
+summary   : Read Binary Data
+license   : LGPLv3
+contact   : rubyworks-mailinglist@googlegroups.com
+suite     : rubyworks 
+copyright : Copyright (c) 2003 Michael Neumann
+created   : 2003-01-01
+
+authors:
+  - Michael Neumann
+  - Thomas Sawyer
+
+description:
+  Provides a BinaryIO class as well as a reusable mixin, BinaryIO::Readable, which
+  is the heart of the BinaryIO class. The mixin solely depends one method, read(n),
+  which must be defined in the class/module where the module is mixed.
+
