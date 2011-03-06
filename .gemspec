@@ -1,13 +1,13 @@
 --- !ruby/object:Gem::Specification 
 name: binaryio
 version: !ruby/object:Gem::Version 
-  hash: 23
+  hash: 21
   prerelease: false
   segments: 
   - 1
   - 0
-  - 0
-  version: 1.0.0
+  - 1
+  version: 1.0.1
 platform: ruby
 authors: 
 - Michael Neumann

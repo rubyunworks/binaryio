@@ -13,7 +13,7 @@ manifest:
 - LICENSE
 - README.rdoc
 - VERSION
-version: 1.0.0
+version: 1.0.1
 licenses: 
 - LGPLv3
 copyright: Copyright (c) 2003 Michael Neumann
