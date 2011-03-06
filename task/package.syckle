@@ -1,9 +1,5 @@
 ---
 box:
   service: Box
+  types  : [gem]
   active : true
-  types  : [gem, tar]
-  include: [bin, demo, lib, meta, test, "[A-Z]*"]
-  exclude: ~
-  remanifest: true
-
