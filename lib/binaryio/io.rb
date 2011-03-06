@@ -1,3 +1,0 @@
-class BinaryIO < IO
-end
-

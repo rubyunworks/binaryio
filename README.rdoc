@@ -1,19 +1,19 @@
 = BinaryIO
 
-* http://rubyworks.rubyforge.org/binaryio
-* http://death.rubyforge.org/binaryio (old site)
-
-
 == DESCRIPTION
 
-Provides a BinaryIO class as well as a reusable mixin, BinaryIO::Readable, whuch
-is the heart of the BinaryIO class itself. The mixin solely depends one method, #read(n),
-which must be defined in the class/module where the module is mixed.
+BinaryIO class is used to read and write binary data.
+
+In addition to the BinaryIO class, the reusable mixin BinaryIO::Readable
+is provided which is the core of the BinaryIO class itself. The mixin solely
+depends one method, #read(n), which must be defined in the class/module where
+the module is mixed.
 
 
-== SYNOPSIS
+== RESOURCES
 
-  ... to do ...
+* home: http://rubyworks.github.com/binaryio
+* work: http://github.com/rubyworks/binaryio
 
 
 == HOW TO INSTALL
@@ -23,8 +23,20 @@ which must be defined in the class/module where the module is mixed.
 
 == COPYING
 
-LPGLv3 License
-
-Copyright (c) 2009 Coding Dead
+Copyright (c) 2009 Thomas Sawyer
 Copyright (c) 2003 Michael Neumann
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file and the files packaged with it except
+in compliance with the License. You may obtain a copy of the
+License at:
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
 

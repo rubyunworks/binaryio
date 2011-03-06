@@ -1,13 +1,11 @@
 --- 
 name: binaryio
+spec_version: 1.0.0
 title: BinaryIO
 contact: rubyworks-mailinglist@googlegroups.com
-pom_verison: 1.0.0
+suite: rubyworks
 manifest: 
 - .ruby
-- lib/binaryio/byteorder.rb
-- lib/binaryio/io.rb
-- lib/binaryio/readable.rb
 - lib/binaryio.rb
 - test/test_byteorder.rb
 - HISTORY.rdoc
@@ -15,7 +13,6 @@ manifest:
 - LICENSE
 - README.rdoc
 - VERSION
-suite: rubyworks
 version: 1.0.0
 licenses: 
 - LGPLv3
