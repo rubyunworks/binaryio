@@ -1,4 +1,16 @@
-= CHANGE HISTORY
+= RELEASE HISTORY
+
+== 1.0.1 / 2010-03-06
+
+This is a minor point release that does nothing but merge the library into a
+single file --since it is so small anyway. The license has also been changed
+to Apache 2.0.
+
+Changes:
+
+* Merge `binaryio/readable.rb` and `binaryio/byteorder.rb` into `binaryio.rb`.
+* Change license to Apache 2.0.
+
 
 == 1.0.0 / 2009-07-04
 
