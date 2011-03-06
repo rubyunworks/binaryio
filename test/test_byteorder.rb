@@ -1,4 +1,4 @@
-require 'binaryio/byteorder'
+require 'binaryio'
 require 'test/unit'
 
 class TC_ByteOrder < Test::Unit::TestCase
