@@ -1,0 +1,31 @@
+---
+rdoc:
+  service  : RDoc
+  output   : site
+  template : newfish
+  include  : ~
+  exclude  : ~
+  main     : ~
+  extra    : ~
+  active   : true
+
+ridoc:
+  service  : RIDoc
+  include  : ~
+  exclude  : ~
+  active   : false
+
+dnote:
+  service  : DNote
+  loadpath : ~
+  labels   : ~
+  output   : ~
+  active   : false
+
+vclog:
+  service  : VClog
+  layout   : rel    # gnu
+  typed    : false
+  output   : ~
+  active   : false
+

@@ -13,3 +13,12 @@ email:
   secure  : <%= ENV['EMAIL_SECURE']  %>
   active  : true
 
+#rubyforge:
+#  service : Rubyforge
+#  unixname: <%= project %>
+#  groupid : ~
+#  package : <%= package %>
+#  sitemap:
+#    doc/rdoc: <%= package %>
+#  active  : false
+

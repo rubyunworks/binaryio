@@ -1,10 +1,16 @@
 ---
-testunit:
-  service  : Testrb
+testrb:
+  service  : testrb
   tests    : ~
   exclude  : ~
   loadpath : ~
   requires : ~
   live     : false   
+  active   : false
+
+syntax:
+  service  : Syntax
+  loadpath : ~
+  exclude  : ~
   active   : false
 
