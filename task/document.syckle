@@ -2,7 +2,7 @@
 rdoc:
   service  : RDoc
   output   : site
-  template : newfish
+  format   : newfish
   include  : ~
   exclude  : ~
   main     : ~

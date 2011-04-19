@@ -1,9 +1,14 @@
 #!mast -x Syckfile .ruby bin lib spec test [A-Z]*
 .ruby
+lib/binaryio/byte_order.rb
+lib/binaryio/io.rb
+lib/binaryio/readable.rb
+lib/binaryio/version.rb
+lib/binaryio/writable.rb
 lib/binaryio.rb
 test/test_byteorder.rb
-HISTORY.rdoc
-PROFILE
-LICENSE
+Profile
 README.rdoc
-VERSION
+History.rdoc
+Version
+License.txt

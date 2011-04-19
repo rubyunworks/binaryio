@@ -1,5 +1,16 @@
 = RELEASE HISTORY
 
+== 1.1.0 / 2011-04-19
+
+Dicovered that Writable was never added BinaryIO. This has been corrected.
+In the process the organization of the project has been improved.
+
+Changes:
+
+* Add Writable mixin.
+* Split mixins into separate project files.
+
+
 == 1.0.1 / 2010-03-06
 
 This is a minor point release that does nothing but merge the library into a
