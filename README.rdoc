@@ -4,10 +4,19 @@
 
 BinaryIO class is used to read and write binary data.
 
-In addition to the BinaryIO class, the reusable mixin BinaryIO::Readable
-is provided which is the core of the BinaryIO class itself. The mixin solely
-depends one method, #read(n), which must be defined in the class/module where
-the module is mixed.
+The BinaryIO class is built on the reusable mixins `BinaryIO::Readable`
+and `BinaryIO::Writable`. Readable solely depends one method, `#read(n)`,
+which must be defined in the class/module where the module is mixed.
+Likewise Writeable depends on `write(str)`.
+
+
+== HISTORY
+
+Almost all of BinaryIO's code was written by Michael Neumann as +BinaryReader+, 
++BinaryWriter+ and +ByteOrder+. These modules were distributed with Ruby
+Facets for some time, but when Facets began to strip itself of most non core
+extension libraries in 2009, these scripts were spun off as a separate project
+and reorganized to become the BinaryIO library.
 
 
 == RESOURCES
@@ -23,8 +32,8 @@ the module is mixed.
 
 == COPYING
 
-Copyright (c) 2009 Thomas Sawyer
 Copyright (c) 2003 Michael Neumann
+Copyright (c) 2009 Thomas Sawyer
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file and the files packaged with it except
