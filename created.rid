@@ -1,1 +1,12 @@
-Sun, 27 Sep 2009 08:27:04 -0400
+Tue, 19 Apr 2011 14:53:27 -0400
+lib/binaryio/writable.rb	Tue, 19 Apr 2011 14:46:28 -0400
+Version	Tue, 19 Apr 2011 14:48:01 -0400
+Profile	Sun, 12 Dec 2010 22:11:47 -0500
+lib/binaryio.rb	Tue, 19 Apr 2011 14:34:47 -0400
+lib/binaryio/byte_order.rb	Tue, 19 Apr 2011 14:32:49 -0400
+History.rdoc	Tue, 19 Apr 2011 14:52:45 -0400
+lib/binaryio/io.rb	Tue, 19 Apr 2011 14:33:34 -0400
+License.txt	Sun, 06 Mar 2011 11:06:40 -0500
+lib/binaryio/readable.rb	Tue, 19 Apr 2011 14:32:43 -0400
+README.rdoc	Tue, 19 Apr 2011 14:46:12 -0400
+lib/binaryio/version.rb	Tue, 19 Apr 2011 14:23:55 -0400

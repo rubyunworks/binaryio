@@ -1,138 +1,451 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 
-	<title>BinaryIO</title>
+  <title>BinaryIO</title>
 
-	<link type="text/css" media="screen" href="rdoc.css" rel="stylesheet" />
+  <link rel="SHORTCUT ICON" href="assets/icon/ruby.png">
 
-	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+  <link type="text/css" rel="stylesheet" href="assets/rdoc.css" media="screen" />
+  <link type="text/css" rel="stylesheet" href="assets/highlight/styles/github.css" title="GitHub" />
 
+  <script type="text/javascript" charset="utf-8" src="assets/jquery.js"></script>
+  <script type="text/javascript" charset="utf-8" src="assets/highlight/highlight.pack.js"></script>
+  <script type="text/javascript" charset="utf-8" src="assets/quicksearch.js"></script>
+  <script type="text/javascript" charset="utf-8" src="assets/main.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready( function() {
+      $('#documentation pre').wrapInner('<code></code>');
+      hljs.tabReplace = '    ';
+      hljs.initHighlightingOnLoad('ruby');
+
+	    hookSourceViews();
+	    hookDebuggingToggle();
+	    hookQuickSearch();
+	    highlightLocationTarget();
+
+	    $('ul.link-list a').bind( "click", highlightClickTarget );
+    });
+  </script>
 </head>
 <body class="indexpage">
+<div id="main">
 
-	
-	<h1>BinaryIO</h1>
+  
+  <div class="head">
+    <h1>
+      <img src="assets/icon/project.png" align="absmiddle">&nbsp;
+      <a href="index.html">BinaryIO</a>
+    </h1>
+  </div>
 
-	
-	<p>This is the API documentation for 'BinaryIO'.</p>
-	
+  <div id="metadata">
+    <div id="project-metadata">
 
-	
-	
-	<h2>Files</h2>
-	<ul>
-		
-			<li class="file"><a href="HISTORY_rdoc.html">HISTORY.rdoc</a></li>
-		
-			<li class="file"><a href="LICENSE.html">LICENSE</a></li>
-		
-			<li class="file"><a href="README_rdoc.html">README.rdoc</a></li>
-		
-	</ul>
-	
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Information</h3>
+        <ul>
+        
+          <li class="file"><a href="Version.html">Version</a></li>
+        
+          <li class="file"><a href="Profile.html">Profile</a></li>
+        
+          <li class="file"><a href="History_rdoc.html">History.rdoc</a></li>
+        
+          <li class="file"><a href="License_txt.html">License.txt</a></li>
+        
+          <li class="file"><a href="README_rdoc.html">README.rdoc</a></li>
+        
+        </ul>
+      </div>
+      
 
-	<h2>Classes/Modules</h2>
-	<ul>
-		
-		<li class="class"><a href="BinaryIO.html">BinaryIO</a></li>
-		
-		<li class="module"><a href="BinaryIO/ByteOrder.html">BinaryIO::ByteOrder</a></li>
-		
-		<li class="module"><a href="BinaryIO/Readable.html">BinaryIO::Readable</a></li>
-		
-	</ul>
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class Index
+          <span class="search-toggle"><img src="assets/icon/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
 
-	<h2>Methods</h2>
-	<ul>
-		
-			<li><a href="BinaryIO/ByteOrder.html#M000007">::big? &mdash; BinaryIO::ByteOrder</a></li>
-		
-			<li><a href="BinaryIO/ByteOrder.html#M000003">::big_endian? &mdash; BinaryIO::ByteOrder</a></li>
-		
-			<li><a href="BinaryIO/ByteOrder.html#M000000">::byte_order &mdash; BinaryIO::ByteOrder</a></li>
-		
-			<li><a href="BinaryIO/ByteOrder.html#M000001">::byteorder &mdash; BinaryIO::ByteOrder</a></li>
-		
-			<li><a href="BinaryIO/ByteOrder.html#M000006">::little? &mdash; BinaryIO::ByteOrder</a></li>
-		
-			<li><a href="BinaryIO/ByteOrder.html#M000002">::little_endian? &mdash; BinaryIO::ByteOrder</a></li>
-		
-			<li><a href="BinaryIO/ByteOrder.html#M000008">::network? &mdash; BinaryIO::ByteOrder</a></li>
-		
-			<li><a href="BinaryIO/ByteOrder.html#M000007">#big? &mdash; BinaryIO::ByteOrder</a></li>
-		
-			<li><a href="BinaryIO/ByteOrder.html#M000003">#big_endian? &mdash; BinaryIO::ByteOrder</a></li>
-		
-			<li><a href="BinaryIO/ByteOrder.html#M000000">#byte_order &mdash; BinaryIO::ByteOrder</a></li>
-		
-			<li><a href="BinaryIO/Readable.html#M000004">#byte_order &mdash; BinaryIO::Readable</a></li>
-		
-			<li><a href="BinaryIO/Readable.html#M000005">#byte_order= &mdash; BinaryIO::Readable</a></li>
-		
-			<li><a href="BinaryIO/ByteOrder.html#M000001">#byteorder &mdash; BinaryIO::ByteOrder</a></li>
-		
-			<li><a href="BinaryIO/Readable.html#M000009">#byteorder &mdash; BinaryIO::Readable</a></li>
-		
-			<li><a href="BinaryIO/Readable.html#M000010">#byteorder= &mdash; BinaryIO::Readable</a></li>
-		
-			<li><a href="BinaryIO/ByteOrder.html#M000006">#little? &mdash; BinaryIO::ByteOrder</a></li>
-		
-			<li><a href="BinaryIO/ByteOrder.html#M000002">#little_endian? &mdash; BinaryIO::ByteOrder</a></li>
-		
-			<li><a href="BinaryIO/ByteOrder.html#M000008">#network? &mdash; BinaryIO::ByteOrder</a></li>
-		
-			<li><a href="BinaryIO/Readable.html#M000026">#read_cstring &mdash; BinaryIO::Readable</a></li>
-		
-			<li><a href="BinaryIO/Readable.html#M000018">#read_int16_big &mdash; BinaryIO::Readable</a></li>
-		
-			<li><a href="BinaryIO/Readable.html#M000017">#read_int16_little &mdash; BinaryIO::Readable</a></li>
-		
-			<li><a href="BinaryIO/Readable.html#M000016">#read_int16_native &mdash; BinaryIO::Readable</a></li>
-		
-			<li><a href="BinaryIO/Readable.html#M000024">#read_int32_big &mdash; BinaryIO::Readable</a></li>
-		
-			<li><a href="BinaryIO/Readable.html#M000023">#read_int32_little &mdash; BinaryIO::Readable</a></li>
-		
-			<li><a href="BinaryIO/Readable.html#M000022">#read_int32_native &mdash; BinaryIO::Readable</a></li>
-		
-			<li><a href="BinaryIO/Readable.html#M000012">#read_int8 &mdash; BinaryIO::Readable</a></li>
-		
-			<li><a href="BinaryIO/Readable.html#M000025">#read_uint8 &mdash; BinaryIO::Readable</a></li>
-		
-			<li><a href="BinaryIO/Readable.html#M000015">#read_word16_big &mdash; BinaryIO::Readable</a></li>
-		
-			<li><a href="BinaryIO/Readable.html#M000014">#read_word16_little &mdash; BinaryIO::Readable</a></li>
-		
-			<li><a href="BinaryIO/Readable.html#M000013">#read_word16_native &mdash; BinaryIO::Readable</a></li>
-		
-			<li><a href="BinaryIO/Readable.html#M000021">#read_word32_big &mdash; BinaryIO::Readable</a></li>
-		
-			<li><a href="BinaryIO/Readable.html#M000020">#read_word32_little &mdash; BinaryIO::Readable</a></li>
-		
-			<li><a href="BinaryIO/Readable.html#M000019">#read_word32_native &mdash; BinaryIO::Readable</a></li>
-		
-			<li><a href="BinaryIO/Readable.html#M000011">#read_word8 &mdash; BinaryIO::Readable</a></li>
-		
-			<li><a href="BinaryIO/Readable.html#M000027">#readn &mdash; BinaryIO::Readable</a></li>
-		
-			<li><a href="BinaryIO/Readable.html#M000028">#ru &mdash; BinaryIO::Readable</a></li>
-		
-			<li><a href="BinaryIO/Readable.html#M000029">#ru_swap &mdash; BinaryIO::Readable</a></li>
-		
-	</ul>
+        <ul class="link-list">
+        
+          <li class="class"><a href="BinaryIO.html">BinaryIO</a></li>
+        
+          <li class="module"><a href="BinaryIO/ByteOrder.html">BinaryIO::ByteOrder</a></li>
+        
+          <li class="module"><a href="BinaryIO/Readable.html">BinaryIO::Readable</a></li>
+        
+          <li class="module"><a href="BinaryIO/Writable.html">BinaryIO::Writable</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
 
-	<div id="validator-badges">
-		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
-		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
-			Rdoc Generator</a> 1.1.6</small>.</p>
-	</div>
+      <!-- METHODS -->
+      <div id="methodindex-section" class="section project-section">
+        <h3 class="section-header">Method Index
+          <span class="search-toggle"><img src="assets/icon/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul>
+          
+            
+            <li class="singleton" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::ByteOrder</span>
+              <a href="BinaryIO/ByteOrder.html#method-c-big-3F">::big?</a>
+            </li>
+          
+            
+            <li class="singleton" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::ByteOrder</span>
+              <a href="BinaryIO/ByteOrder.html#method-c-big_endian-3F">::big_endian?</a>
+            </li>
+          
+            
+            <li class="singleton" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::ByteOrder</span>
+              <a href="BinaryIO/ByteOrder.html#method-c-byte_order">::byte_order</a>
+            </li>
+          
+            
+            <li class="singleton" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::ByteOrder</span>
+              <a href="BinaryIO/ByteOrder.html#method-c-byteorder">::byteorder</a>
+            </li>
+          
+            
+            <li class="singleton" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::ByteOrder</span>
+              <a href="BinaryIO/ByteOrder.html#method-c-little-3F">::little?</a>
+            </li>
+          
+            
+            <li class="singleton" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::ByteOrder</span>
+              <a href="BinaryIO/ByteOrder.html#method-c-little_endian-3F">::little_endian?</a>
+            </li>
+          
+            
+            <li class="singleton" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::ByteOrder</span>
+              <a href="BinaryIO/ByteOrder.html#method-c-network-3F">::network?</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Readable</span>
+              <a href="BinaryIO/Readable.html#method-i-byte_order">#byte_order</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Readable</span>
+              <a href="BinaryIO/Readable.html#method-i-byte_order-3D">#byte_order=</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Readable</span>
+              <a href="BinaryIO/Readable.html#method-i-byteorder">#byteorder</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Readable</span>
+              <a href="BinaryIO/Readable.html#method-i-byteorder-3D">#byteorder=</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Readable</span>
+              <a href="BinaryIO/Readable.html#method-i-read_cstring">#read_cstring</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Readable</span>
+              <a href="BinaryIO/Readable.html#method-i-read_int16_big">#read_int16_big</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Readable</span>
+              <a href="BinaryIO/Readable.html#method-i-read_int16_little">#read_int16_little</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Readable</span>
+              <a href="BinaryIO/Readable.html#method-i-read_int16_native">#read_int16_native</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Readable</span>
+              <a href="BinaryIO/Readable.html#method-i-read_int32_big">#read_int32_big</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Readable</span>
+              <a href="BinaryIO/Readable.html#method-i-read_int32_little">#read_int32_little</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Readable</span>
+              <a href="BinaryIO/Readable.html#method-i-read_int32_native">#read_int32_native</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Readable</span>
+              <a href="BinaryIO/Readable.html#method-i-read_int8">#read_int8</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Readable</span>
+              <a href="BinaryIO/Readable.html#method-i-read_template">#read_template</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Readable</span>
+              <a href="BinaryIO/Readable.html#method-i-read_template_to_hash">#read_template_to_hash</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Readable</span>
+              <a href="BinaryIO/Readable.html#method-i-read_uint8">#read_uint8</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Readable</span>
+              <a href="BinaryIO/Readable.html#method-i-read_word16_big">#read_word16_big</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Readable</span>
+              <a href="BinaryIO/Readable.html#method-i-read_word16_little">#read_word16_little</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Readable</span>
+              <a href="BinaryIO/Readable.html#method-i-read_word16_native">#read_word16_native</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Readable</span>
+              <a href="BinaryIO/Readable.html#method-i-read_word32_big">#read_word32_big</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Readable</span>
+              <a href="BinaryIO/Readable.html#method-i-read_word32_little">#read_word32_little</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Readable</span>
+              <a href="BinaryIO/Readable.html#method-i-read_word32_native">#read_word32_native</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Readable</span>
+              <a href="BinaryIO/Readable.html#method-i-read_word8">#read_word8</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Readable</span>
+              <a href="BinaryIO/Readable.html#method-i-readn">#readn</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Writable</span>
+              <a href="BinaryIO/Writable.html#method-i-write_int16_little">#write_int16_little</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Writable</span>
+              <a href="BinaryIO/Writable.html#method-i-write_int16_native">#write_int16_native</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Writable</span>
+              <a href="BinaryIO/Writable.html#method-i-write_int16_network">#write_int16_network</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Writable</span>
+              <a href="BinaryIO/Writable.html#method-i-write_int32_little">#write_int32_little</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Writable</span>
+              <a href="BinaryIO/Writable.html#method-i-write_int32_native">#write_int32_native</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Writable</span>
+              <a href="BinaryIO/Writable.html#method-i-write_int32_network">#write_int32_network</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Writable</span>
+              <a href="BinaryIO/Writable.html#method-i-write_int8">#write_int8</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Writable</span>
+              <a href="BinaryIO/Writable.html#method-i-write_word16_little">#write_word16_little</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Writable</span>
+              <a href="BinaryIO/Writable.html#method-i-write_word16_native">#write_word16_native</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Writable</span>
+              <a href="BinaryIO/Writable.html#method-i-write_word16_network">#write_word16_network</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Writable</span>
+              <a href="BinaryIO/Writable.html#method-i-write_word32_little">#write_word32_little</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Writable</span>
+              <a href="BinaryIO/Writable.html#method-i-write_word32_native">#write_word32_native</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Writable</span>
+              <a href="BinaryIO/Writable.html#method-i-write_word32_network">#write_word32_network</a>
+            </li>
+          
+            
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">BinaryIO::Writable</span>
+              <a href="BinaryIO/Writable.html#method-i-write_word8">#write_word8</a>
+            </li>
+          
+        </ul>
+      </div>
+
+    </div>
+
+    <div id="validator-badges">
+      
+      <div style="float: right; margin-right: 5px;">
+        <a href="http://validator.w3.org/check/referer"><img src="assets/icon/check.png" alt="[Validate]" height="16" width="16" /></a>
+      </div>
+      Generated with <a href="http://rubyworks.github.com/newfish">Newfish</a> 0.2.0
+      <br/><br/> 
+    </div>
+  </div>
+
+  
+  <div id="documentation">
+    
+<h1><a href="BinaryIO.html">BinaryIO</a></h1>
+
+<h2>DESCRIPTION</h2>
+
+<p><a href="BinaryIO.html">BinaryIO</a> class is used to read and write binary
+data.</p>
+
+<p>The <a href="BinaryIO.html">BinaryIO</a> class is built on the reusable
+mixins `BinaryIO::Readable` and `BinaryIO::Writable`. Readable solely
+depends one method, `#read(n)`, which must be defined in the class/module
+where the module is mixed. Likewise Writeable depends on `write(str)`.</p>
+
+<h2>HISTORY</h2>
+
+<p>Almost all of BinaryIO’s code was written by Michael Neumann as
+<tt>BinaryReader</tt>,  <tt>BinaryWriter</tt> and <tt>ByteOrder</tt>. These
+modules were distributed with Ruby Facets for some time, but when Facets
+began to strip itself of most non core extension libraries in 2009, these
+scripts were spun off as a separate project and reorganized to become the
+<a href="BinaryIO.html">BinaryIO</a> library.</p>
+
+<h2>RESOURCES</h2>
+<ul><li>
+<p>home: <a
+href="http://rubyworks.github.com/binaryio">rubyworks.github.com/binaryio</a></p>
+</li><li>
+<p>work: <a
+href="http://github.com/rubyworks/binaryio">github.com/rubyworks/binaryio</a></p>
+</li></ul>
+
+<h2>HOW TO INSTALL</h2>
+
+<pre>$ gem install binaryio</pre>
+
+<h2>COPYING</h2>
+
+<p>Copyright © 2003 Michael Neumann Copyright © 2009 Thomas Sawyer</p>
+
+<p>Licensed under the Apache License, <a href="Version.html">Version</a> 2.0
+(the “License”); you may not use this file and the files packaged with
+it except in compliance with the License. You may obtain a copy of the
+License at:</p>
+
+<pre>http://www.apache.org/licenses/LICENSE-2.0</pre>
+
+<p>Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an “AS IS” BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.</p>
+
+  </div>
+  
+
+</div>
 </body>
 </html>
+
