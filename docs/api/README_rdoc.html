@@ -5,7 +5,7 @@
 <head>
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 
-  <title>File: History.rdoc [BinaryIO]</title>
+  <title>File: README.rdoc [&quot;BinaryIO&quot;]</title>
 
   <link rel="SHORTCUT ICON" href="./assets/icon/file.png">
 
@@ -39,8 +39,8 @@
   <div class="head">
     <h1>
       <img src="./assets/icon/file.png" align="absmiddle">&nbsp;
-      <a href="./index.html">BinaryIO</a>&nbsp;
-      <a href="/">History.rdoc</a>
+      <a href="./index.html">&quot;BinaryIO&quot;</a>&nbsp;
+      <a href="/">README.rdoc</a>
     </h1>
   </div>
 
@@ -49,7 +49,7 @@
       <h3 class="section-header">File Stats</h3>
       <dl>
         <dt class="modified-date">Last Modified</dt>
-        <dd class="modified-date">Tue Apr 19 14:52:45 -0400 2011</dd>
+        <dd class="modified-date">Tue May 10 17:13:57 -0400 2011</dd>
 
         
 
@@ -70,9 +70,9 @@
         
           <li class="file"><a href="./History_rdoc.html">History.rdoc</a></li>
         
-          <li class="file"><a href="./License_txt.html">License.txt</a></li>
-        
           <li class="file"><a href="./README_rdoc.html">README.rdoc</a></li>
+        
+          <li class="file"><a href="./APACHE2_txt.html">APACHE2.txt</a></li>
         
         </ul>
       </div>
@@ -401,48 +401,59 @@
 
   <div id="documentation">
     
-<h1>RELEASE HISTORY</h1>
+<h1><a href="BinaryIO.html">BinaryIO</a></h1>
 
-<h2>1.1.0 / 2011-04-19</h2>
+<h2>DESCRIPTION</h2>
 
-<p>Dicovered that Writable was never added <a
-href="BinaryIO.html">BinaryIO</a>. This has been corrected. In the process
-the organization of the project has been improved.</p>
+<p><a href="BinaryIO.html">BinaryIO</a> class is used to read and write binary
+data.</p>
 
-<p>Changes:</p>
+<p>The <a href="BinaryIO.html">BinaryIO</a> class is built on the reusable
+mixins `BinaryIO::Readable` and `BinaryIO::Writable`. Readable solely
+depends one method, `#read(n)`, which must be defined in the class/module
+where the module is mixed. Likewise Writeable depends on `write(str)`.</p>
+
+<h2>HISTORY</h2>
+
+<p>Almost all of BinaryIO’s code was written by Michael Neumann as
+<tt>BinaryReader</tt>,  <tt>BinaryWriter</tt> and <tt>ByteOrder</tt>. These
+modules were distributed with Ruby Facets for some time, but when Facets
+began to strip itself of most non core extension libraries in 2009, these
+scripts were spun off as a separate project and reorganized to become the
+<a href="BinaryIO.html">BinaryIO</a> library.</p>
+
+<h2>RESOURCES</h2>
 <ul><li>
-<p>Add Writable mixin.</p>
+<p>home: <a
+href="http://rubyworks.github.com/binaryio">rubyworks.github.com/binaryio</a></p>
 </li><li>
-<p>Split mixins into separate project files.</p>
-</li></ul>
-
-<h2>1.0.1 / 2010-03-06</h2>
-
-<p>This is a minor point release that does nothing but merge the library into
-a single file –since it is so small anyway. The license has also been
-changed to Apache 2.0.</p>
-
-<p>Changes:</p>
-<ul><li>
-<p>Merge `binaryio/readable.rb` and `binaryio/byteorder.rb` into
-`binaryio.rb`.</p>
+<p>work: <a
+href="http://github.com/rubyworks/binaryio">github.com/rubyworks/binaryio</a></p>
 </li><li>
-<p>Change license to Apache 2.0.</p>
+<p>mail: <a
+href="http://groups.google/group/rubyworks-mailinglist">groups.google/group/rubyworks-mailinglist</a></p>
 </li></ul>
 
-<h2>1.0.0 / 2009-07-04</h2>
+<h2>HOW TO INSTALL</h2>
 
-<p>This is the initial standalone release of <a
-href="BinaryIO.html">BinaryIO</a>, spun-off from the Ruby Facets library
-BinReadable, which came form an earlier library called BinaryReader by
-Michael Neumann.</p>
+<pre>$ gem install binaryio</pre>
 
-<p>Changes:</p>
-<ul><li>
-<p>1 Major Enhancement</p>
+<h2>COPYING</h2>
 
-<pre>* Happy Birthday!</pre>
-</li></ul>
+<p>Copyright © 2003 Michael Neumann Copyright © 2009 Thomas Sawyer</p>
+
+<p>Licensed under the Apache License, <a href="Version.html">Version</a> 2.0
+(the “License”); you may not use this file and the files packaged with
+it except in compliance with the License. You may obtain a copy of the
+License at:</p>
+
+<pre>http://www.apache.org/licenses/LICENSE-2.0</pre>
+
+<p>Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an “AS IS” BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.</p>
 
   </div>
 

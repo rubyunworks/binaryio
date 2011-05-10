@@ -1,0 +1,52 @@
+
+<h1>BinaryIO</h1>
+
+<h2>DESCRIPTION</h2>
+
+<p>BinaryIO class is used to read and write binary data.</p>
+
+<p>The BinaryIO class is built on the reusable mixins `BinaryIO::Readable` and
+`BinaryIO::Writable`. Readable solely depends one method, `#read(n)`, which
+must be defined in the class/module where the module is mixed. Likewise
+Writeable depends on `write(str)`.</p>
+
+<h2>HISTORY</h2>
+
+<p>Almost all of BinaryIO’s code was written by Michael Neumann as
+<tt>BinaryReader</tt>,  <tt>BinaryWriter</tt> and <tt>ByteOrder</tt>. These
+modules were distributed with Ruby Facets for some time, but when Facets
+began to strip itself of most non core extension libraries in 2009, these
+scripts were spun off as a separate project and reorganized to become the
+BinaryIO library.</p>
+
+<h2>RESOURCES</h2>
+<ul><li>
+<p>home: <a
+href="http://rubyworks.github.com/binaryio">rubyworks.github.com/binaryio</a></p>
+</li><li>
+<p>work: <a
+href="http://github.com/rubyworks/binaryio">github.com/rubyworks/binaryio</a></p>
+</li><li>
+<p>mail: <a
+href="http://groups.google/group/rubyworks-mailinglist">groups.google/group/rubyworks-mailinglist</a></p>
+</li></ul>
+
+<h2>HOW TO INSTALL</h2>
+
+<pre>$ gem install binaryio</pre>
+
+<h2>COPYING</h2>
+
+<p>Copyright © 2003 Michael Neumann Copyright © 2009 Thomas Sawyer</p>
+
+<p>Licensed under the Apache License, Version 2.0 (the “License”); you may
+not use this file and the files packaged with it except in compliance with
+the License. You may obtain a copy of the License at:</p>
+
+<pre>http://www.apache.org/licenses/LICENSE-2.0</pre>
+
+<p>Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an “AS IS” BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.</p>
