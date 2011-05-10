@@ -1,7 +1,7 @@
 ---
 rdoc:
   service  : RDoc
-  output   : site
+  output   : site/docs/api
   format   : newfish
   include  : ~
   exclude  : ~
@@ -9,8 +9,8 @@ rdoc:
   extra    : ~
   active   : true
 
-ridoc:
-  service  : RIDoc
+ri:
+  service  : RI
   include  : ~
   exclude  : ~
   active   : false

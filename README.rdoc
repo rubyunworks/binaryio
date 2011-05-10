@@ -23,6 +23,7 @@ and reorganized to become the BinaryIO library.
 
 * home: http://rubyworks.github.com/binaryio
 * work: http://github.com/rubyworks/binaryio
+* mail: http://groups.google/group/rubyworks-mailinglist
 
 
 == HOW TO INSTALL
