@@ -1,5 +1,15 @@
 = RELEASE HISTORY
 
+== 1.1.1 / 2011-05-04
+
+This release is a simple administrative maintenance release.
+API wise notthing has changed since the last release.
+
+Changes:
+
+* Administrative details.
+
+
 == 1.1.0 / 2011-04-19
 
 Dicovered that Writable was never added BinaryIO. This has been corrected.
@@ -32,7 +42,5 @@ by Michael Neumann.
 
 Changes:
 
-* 1 Major Enhancement
-
-    * Happy Birthday!
+* Happy Birthday!
 

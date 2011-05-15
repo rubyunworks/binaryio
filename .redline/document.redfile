@@ -1,4 +1,9 @@
 ---
+yard:
+  service  : custom
+  document : |
+    system 'yard -r README.rdoc -o site/docs/api lib - HISTORY.rdoc NOTICE.rdoc'
+
 rdoc:
   service  : RDoc
   output   : site/docs/api
@@ -7,12 +12,13 @@ rdoc:
   exclude  : ~
   main     : ~
   extra    : ~
-  active   : true
+  active   : false
 
 ri:
   service  : RI
   include  : ~
   exclude  : ~
+  output   : ri
   active   : false
 
 dnote:

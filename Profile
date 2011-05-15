@@ -14,6 +14,9 @@ resources:
   home: http://rubyworks.github.com/binaryio
   code: http://github.com/rubyworks/binaryio
 
+requires:
+  - redline (build)
+
 description:
   Provides a BinaryIO class as well as a reusable mixin, BinaryIO::Readable, which
   is the heart of the BinaryIO class. The mixin solely depends one method, read(n),
