@@ -1,1065 +1,1217 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title>Module: BinaryIO::Readable</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
 
-  <title>Module: BinaryIO::Readable</title>
+<script type="text/javascript" charset="utf-8">
+  relpath = '..';
+  if (relpath != '') relpath += '/';
+</script>
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
 
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
   
-    <link rel="SHORTCUT ICON" href="../assets/icon/module.png">
+    <a href="../_index.html">Index (R)</a> &raquo; 
+    <span class='title'><span class='object_link'><a href="../BinaryIO.html" title="BinaryIO (class)">BinaryIO</a></span></span>
+     &raquo; 
+    <span class="title">Readable</span>
   
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
 
-  <link type="text/css" rel="stylesheet" href="../assets/rdoc.css" media="screen" />
-  <link type="text/css" rel="stylesheet" href="../assets/highlight/styles/github.css" title="GitHub" />
+      <div id="search">
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
+</div>
 
-  <script type="text/javascript" charset="utf-8" src="../assets/jquery.js"></script>
-  <script type="text/javascript" charset="utf-8" src="../assets/highlight/highlight.pack.js"></script>
-  <script type="text/javascript" charset="utf-8" src="../assets/quicksearch.js"></script>
-  <script type="text/javascript" charset="utf-8" src="../assets/main.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready( function() {
-      $('#documentation pre').wrapInner('<code></code>');
-      hljs.tabReplace = '    ';
-      hljs.initHighlightingOnLoad('ruby');
-
-	    hookSourceViews();
-	    hookDebuggingToggle();
-	    hookQuickSearch();
-	    highlightLocationTarget();
-
-	    $('ul.link-list a').bind( "click", highlightClickTarget );
-    });
-  </script>
-</head>
-<body class="module">
-<div id="main">
-
-  <div class="head">
-    <h1>
-      
-        <img src="../assets/icon/module.png" align="absmiddle">&nbsp;
-      
-      <a href="../index.html">&quot;BinaryIO&quot;</a>&nbsp;
-      <a href="/">BinaryIO::Readable</a>
-    </h1>
-  </div>
-
-  <div id="metadata">
-    <div id="project-metadata">
-
-      <div id="file-list-section" class="section">
-        <h3 class="section-header">In Files</h3>
-        <div class="section-body">
-          <ul>
-          
-            <li class="file"><a href="../lib/binaryio/readable_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
-              class="thickbox" title="lib/binaryio/readable.rb">lib/binaryio/readable.rb</a></li>
-          
-          </ul>
-        </div>
-      </div>
-
-      <!-- What about Git info, or Hg info? This seems almost silly, albeit kind of cool. -->
-      <!-- TODO: generalize this for all SCMs -->
-
-      
+      <div class="clear"></div>
     </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><h1>Module: BinaryIO::Readable
+  
+  
+  
+</h1>
 
-    <div id="class-metadata">
+<dl class="box">
+  
+  
+    
+  
+    
+  
+  
+    <dt class="r1">Included in:</dt>
+    <dd class="r1"><span class='object_link'><a href="../BinaryIO.html" title="BinaryIO (class)">BinaryIO</a></span></dd>
+    
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/binaryio/readable.rb</dd>
+  
+</dl>
+<div class="clear"></div>
 
-      <!-- Parent Class -->
-      
-
-      <!-- Namespace Contents -->
-      
-
-      <!-- Method Quickref -->
-      
-      <div id="method-list-section" class="section">
-        <h3 class="section-header">Methods</h3>
-        <ul class="link-list">
-          
-            
-            <li class="method">
-              <a href="#method-i-byte_order">#byte_order</a>
-            </li>
-          
-            
-            <li class="method">
-              <a href="#method-i-byte_order-3D">#byte_order=</a>
-            </li>
-          
-            
-            <li class="method">
-              <a href="#method-i-byteorder">#byteorder</a>
-            </li>
-          
-            
-            <li class="method">
-              <a href="#method-i-byteorder-3D">#byteorder=</a>
-            </li>
-          
-            
-            <li class="method">
-              <a href="#method-i-read_cstring">#read_cstring</a>
-            </li>
-          
-            
-            <li class="method">
-              <a href="#method-i-read_int16_big">#read_int16_big</a>
-            </li>
-          
-            
-            <li class="method">
-              <a href="#method-i-read_int16_little">#read_int16_little</a>
-            </li>
-          
-            
-            <li class="method">
-              <a href="#method-i-read_int16_native">#read_int16_native</a>
-            </li>
-          
-            
-            <li class="method">
-              <a href="#method-i-read_int32_big">#read_int32_big</a>
-            </li>
-          
-            
-            <li class="method">
-              <a href="#method-i-read_int32_little">#read_int32_little</a>
-            </li>
-          
-            
-            <li class="method">
-              <a href="#method-i-read_int32_native">#read_int32_native</a>
-            </li>
-          
-            
-            <li class="method">
-              <a href="#method-i-read_int8">#read_int8</a>
-            </li>
-          
-            
-            <li class="method">
-              <a href="#method-i-read_template">#read_template</a>
-            </li>
-          
-            
-            <li class="method">
-              <a href="#method-i-read_template_to_hash">#read_template_to_hash</a>
-            </li>
-          
-            
-            <li class="method">
-              <a href="#method-i-read_uint8">#read_uint8</a>
-            </li>
-          
-            
-            <li class="method">
-              <a href="#method-i-read_word16_big">#read_word16_big</a>
-            </li>
-          
-            
-            <li class="method">
-              <a href="#method-i-read_word16_little">#read_word16_little</a>
-            </li>
-          
-            
-            <li class="method">
-              <a href="#method-i-read_word16_native">#read_word16_native</a>
-            </li>
-          
-            
-            <li class="method">
-              <a href="#method-i-read_word32_big">#read_word32_big</a>
-            </li>
-          
-            
-            <li class="method">
-              <a href="#method-i-read_word32_little">#read_word32_little</a>
-            </li>
-          
-            
-            <li class="method">
-              <a href="#method-i-read_word32_native">#read_word32_native</a>
-            </li>
-          
-            
-            <li class="method">
-              <a href="#method-i-read_word8">#read_word8</a>
-            </li>
-          
-            
-            <li class="method">
-              <a href="#method-i-readn">#readn</a>
-            </li>
-          
-        </ul>
-      </div>
-      
-
-      <!-- Included Modules -->
-      
-    </div>
-
-    <div id="project-metadata">
-      
-      
-      <div id="fileindex-section" class="section project-section">
-        <h3 class="section-header">Information</h3>
-        <ul>
-        
-          <li class="file"><a href="../Version.html">Version</a></li>
-        
-          <li class="file"><a href="../Profile.html">Profile</a></li>
-        
-          <li class="file"><a href="../History_rdoc.html">History.rdoc</a></li>
-        
-          <li class="file"><a href="../README_rdoc.html">README.rdoc</a></li>
-        
-          <li class="file"><a href="../APACHE2_txt.html">APACHE2.txt</a></li>
-        
-        </ul>
-      </div>
-      
-
-      <div id="classindex-section" class="section project-section">
-        <h3 class="section-header">Class Index
-          <span class="search-toggle"><img src="../assets/icon/find.png"
-            height="16" width="16" alt="[+]"
-            title="show/hide quicksearch" /></span></h3>
-        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
-        <fieldset>
-          <legend>Quicksearch</legend>
-          <input type="text" name="quicksearch" value=""
-            class="quicksearch-field" />
-        </fieldset>
-        </form>
-
-        <!-- classpage.html : classes -->
-        <ul class="link-list">
-        
-          <li class="class"><a href="../BinaryIO.html">BinaryIO</a></li>
-        
-          <li class="module"><a href="../BinaryIO/ByteOrder.html">BinaryIO::ByteOrder</a></li>
-        
-          <li class="module"><a href="../BinaryIO/Readable.html">BinaryIO::Readable</a></li>
-        
-          <li class="module"><a href="../BinaryIO/Writable.html">BinaryIO::Writable</a></li>
-        
-        </ul>
-        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
-      </div>
-    </div>
-
-    <div id="validator-badges">
-      
-      <div style="float: right; margin-right: 5px;">
-        <a href="http://validator.w3.org/check/referer"><img src="../assets/icon/check.png" alt="[Validate]" height="16" width="16" /></a>
-      </div>
-      Generated with <a href="http://rubyworks.github.com/newfish">Newfish</a> 0.2.0
-      <br/><br/>
-    </div>
-  </div>
-
-  <div id="documentation">
-
-    <div id="description">
-      
-        <h1>Readable</h1>
-      
-
-      
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
 <p>This mixin solely depends on method read(n), which must be defined in the
 class/module where you mix in this module.</p>
 
 <p>Copyright © Michael Neumann</p>
 
-    </div>
-
-    <!-- Constants -->
-    
-
-    <!-- Attributes -->
-    
-
-    <!-- Methods -->
-    
-    <div id="public-instance-method-details" class="method-section section">
-      <h3 class="section-header">Public Instance Methods</h3>
-
-    
-      <div id="byte_order-method" class="method-detail ">
-        <a name="method-i-byte_order"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">byte_order</span><span
-            class="method-args">()</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          <p>default is native byte-order</p>
-          
-
-          
-          <div class="method-source-code"
-            id="byte_order-source">
-<pre>
-<span class="ruby-comment"># File lib/binaryio/readable.rb, line 13</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">byte_order</span>
-  <span class="ruby-ivar">@byte_order</span> <span class="ruby-operator">||</span> <span class="ruby-constant">ByteOrder</span><span class="ruby-operator">::</span><span class="ruby-constant">Native</span>
-<span class="ruby-keyword">end</span></pre>
-          </div>
-          
-        </div>
-
-        
-        <div class="aliases">
-          Also aliased as: <a href="Readable.html#method-i-byteorder">byteorder</a>
-        </div>
-        
-      </div>
-
-    
-      <div id="byte_order-3D-method" class="method-detail ">
-        <a name="method-i-byte_order-3D"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">byte_order=</span><span
-            class="method-args">(new_byteorder)</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          
-          
-
-          
-          <div class="method-source-code"
-            id="byte_order-3D-source">
-<pre>
-<span class="ruby-comment"># File lib/binaryio/readable.rb, line 17</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">byte_order=</span>(<span class="ruby-identifier">new_byteorder</span>)
-  <span class="ruby-ivar">@byte_order</span> = <span class="ruby-identifier">new_byteorder</span>
-<span class="ruby-keyword">end</span></pre>
-          </div>
-          
-        </div>
-
-        
-        <div class="aliases">
-          Also aliased as: <a href="Readable.html#method-i-byteorder-3D">byteorder=</a>
-        </div>
-        
-      </div>
-
-    
-      <div id="byteorder-method" class="method-detail method-alias">
-        <a name="method-i-byteorder"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">byteorder</span><span
-            class="method-args">()</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          
-          
-
-          
-        </div>
-
-        
-      </div>
-
-    
-      <div id="byteorder-3D-method" class="method-detail method-alias">
-        <a name="method-i-byteorder-3D"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">byteorder=</span><span
-            class="method-args">(new_byteorder)</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          
-          
-
-          
-        </div>
-
-        
-      </div>
-
-    
-      <div id="read_cstring-method" class="method-detail ">
-        <a name="method-i-read_cstring"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">read_cstring</span><span
-            class="method-args">()</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          
-          
-
-          
-          <div class="method-source-code"
-            id="read_cstring-source">
-<pre>
-<span class="ruby-comment"># File lib/binaryio/readable.rb, line 127</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">read_cstring</span>
-  <span class="ruby-identifier">str</span> = <span class="ruby-string">&quot;&quot;</span>
-  <span class="ruby-keyword">while</span> (<span class="ruby-identifier">c</span>=<span class="ruby-identifier">readn</span>(<span class="ruby-value">1</span>)) <span class="ruby-operator">!=</span> <span class="ruby-string">&quot;\00&quot;&quot;</span>
-    <span class="ruby-identifier">str</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">c</span>
-  <span class="ruby-keyword">end</span>
-  <span class="ruby-identifier">str</span>
-<span class="ruby-keyword">end</span></pre>
-          </div>
-          
-        </div>
-
-        
-      </div>
-
-    
-      <div id="read_int16_big-method" class="method-detail ">
-        <a name="method-i-read_int16_big"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">read_int16_big</span><span
-            class="method-args">()</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          
-          
-
-          
-          <div class="method-source-code"
-            id="read_int16_big-source">
-<pre>
-<span class="ruby-comment"># File lib/binaryio/readable.rb, line 63</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">read_int16_big</span>
-  <span class="ruby-comment"># swap bytes if native=little (but we want big)</span>
-  <span class="ruby-identifier">ru_swap</span>(<span class="ruby-value">2</span>, <span class="ruby-string">'s'</span>, <span class="ruby-constant">ByteOrder</span><span class="ruby-operator">::</span><span class="ruby-constant">Little</span>)
-<span class="ruby-keyword">end</span></pre>
-          </div>
-          
-        </div>
-
-        
-      </div>
-
-    
-      <div id="read_int16_little-method" class="method-detail ">
-        <a name="method-i-read_int16_little"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">read_int16_little</span><span
-            class="method-args">()</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          
-          
-
-          
-          <div class="method-source-code"
-            id="read_int16_little-source">
-<pre>
-<span class="ruby-comment"># File lib/binaryio/readable.rb, line 58</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">read_int16_little</span>
-  <span class="ruby-comment"># swap bytes if native=big (but we want little)</span>
-  <span class="ruby-identifier">ru_swap</span>(<span class="ruby-value">2</span>, <span class="ruby-string">'s'</span>, <span class="ruby-constant">ByteOrder</span><span class="ruby-operator">::</span><span class="ruby-constant">Big</span>)
-<span class="ruby-keyword">end</span></pre>
-          </div>
-          
-        </div>
-
-        
-      </div>
-
-    
-      <div id="read_int16_native-method" class="method-detail ">
-        <a name="method-i-read_int16_native"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">read_int16_native</span><span
-            class="method-args">()</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          <h3>Signed</h3>
-          
-
-          
-          <div class="method-source-code"
-            id="read_int16_native-source">
-<pre>
-<span class="ruby-comment"># File lib/binaryio/readable.rb, line 54</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">read_int16_native</span>
-  <span class="ruby-identifier">ru</span>(<span class="ruby-value">2</span>, <span class="ruby-string">'s'</span>)
-<span class="ruby-keyword">end</span></pre>
-          </div>
-          
-        </div>
-
-        
-      </div>
-
-    
-      <div id="read_int32_big-method" class="method-detail ">
-        <a name="method-i-read_int32_big"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">read_int32_big</span><span
-            class="method-args">()</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          
-          
-
-          
-          <div class="method-source-code"
-            id="read_int32_big-source">
-<pre>
-<span class="ruby-comment"># File lib/binaryio/readable.rb, line 95</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">read_int32_big</span>
-  <span class="ruby-comment"># swap bytes if native=little (but we want big)</span>
-  <span class="ruby-identifier">ru_swap</span>(<span class="ruby-value">4</span>, <span class="ruby-string">'l'</span>, <span class="ruby-constant">ByteOrder</span><span class="ruby-operator">::</span><span class="ruby-constant">Little</span>)
-<span class="ruby-keyword">end</span></pre>
-          </div>
-          
-        </div>
-
-        
-      </div>
-
-    
-      <div id="read_int32_little-method" class="method-detail ">
-        <a name="method-i-read_int32_little"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">read_int32_little</span><span
-            class="method-args">()</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          
-          
-
-          
-          <div class="method-source-code"
-            id="read_int32_little-source">
-<pre>
-<span class="ruby-comment"># File lib/binaryio/readable.rb, line 90</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">read_int32_little</span>
-  <span class="ruby-comment"># swap bytes if native=big (but we want little)</span>
-  <span class="ruby-identifier">ru_swap</span>(<span class="ruby-value">4</span>, <span class="ruby-string">'l'</span>, <span class="ruby-constant">ByteOrder</span><span class="ruby-operator">::</span><span class="ruby-constant">Big</span>)
-<span class="ruby-keyword">end</span></pre>
-          </div>
-          
-        </div>
-
-        
-      </div>
-
-    
-      <div id="read_int32_native-method" class="method-detail ">
-        <a name="method-i-read_int32_native"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">read_int32_native</span><span
-            class="method-args">()</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          <h3>Signed</h3>
-          
-
-          
-          <div class="method-source-code"
-            id="read_int32_native-source">
-<pre>
-<span class="ruby-comment"># File lib/binaryio/readable.rb, line 86</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">read_int32_native</span>
-  <span class="ruby-identifier">ru</span>(<span class="ruby-value">4</span>, <span class="ruby-string">'l'</span>)
-<span class="ruby-keyword">end</span></pre>
-          </div>
-          
-        </div>
-
-        
-      </div>
-
-    
-      <div id="read_int8-method" class="method-detail ">
-        <a name="method-i-read_int8"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">read_int8</span><span
-            class="method-args">()</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          
-          
-
-          
-          <div class="method-source-code"
-            id="read_int8-source">
-<pre>
-<span class="ruby-comment"># File lib/binaryio/readable.rb, line 32</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">read_int8</span>
-  <span class="ruby-identifier">ru</span>(<span class="ruby-value">1</span>, <span class="ruby-string">'c'</span>)
-<span class="ruby-keyword">end</span></pre>
-          </div>
-          
-        </div>
-
-        
-      </div>
-
-    
-      <div id="read_template-method" class="method-detail ">
-        <a name="method-i-read_template"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">read_template</span><span
-            class="method-args">(*tmpl, &block)</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          
-          
-
-          
-          <div class="method-source-code"
-            id="read_template-source">
-<pre>
-<span class="ruby-comment"># File lib/binaryio/readable.rb, line 138</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">read_template</span>(*<span class="ruby-identifier">tmpl</span>, &amp;<span class="ruby-identifier">block</span>)
-  <span class="ruby-identifier">arr</span> = [] <span class="ruby-keyword">if</span> <span class="ruby-identifier">block</span>.<span class="ruby-identifier">nil?</span>
-  <span class="ruby-identifier">rep</span> = <span class="ruby-value">1</span> 
-  <span class="ruby-identifier">tmpl</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">spec</span><span class="ruby-operator">|</span>
-    <span class="ruby-keyword">case</span> <span class="ruby-identifier">spec</span>
-    <span class="ruby-keyword">when</span> <span class="ruby-constant">Fixnum</span>
-      <span class="ruby-identifier">rep</span> = <span class="ruby-identifier">spec</span>
-    <span class="ruby-keyword">when</span> <span class="ruby-constant">Symbol</span>, <span class="ruby-constant">String</span>
-      <span class="ruby-identifier">rep</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword">do</span> 
-        <span class="ruby-identifier">val</span> = <span class="ruby-identifier">send</span>(<span class="ruby-node">&quot;read_#{spec}&quot;</span>)
-        <span class="ruby-keyword">if</span> <span class="ruby-identifier">block</span>.<span class="ruby-identifier">nil?</span>
-          <span class="ruby-identifier">arr</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">val</span> 
-        <span class="ruby-keyword">else</span>
-          <span class="ruby-identifier">block</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">val</span>)
-        <span class="ruby-keyword">end</span>
-      <span class="ruby-keyword">end</span>
-      <span class="ruby-identifier">rep</span> = <span class="ruby-value">1</span>
-    <span class="ruby-keyword">else</span>
-      <span class="ruby-identifier">raise</span>
-    <span class="ruby-keyword">end</span>
-  }
-  <span class="ruby-identifier">arr</span>
-<span class="ruby-keyword">end</span></pre>
-          </div>
-          
-        </div>
-
-        
-      </div>
-
-    
-      <div id="read_template_to_hash-method" class="method-detail ">
-        <a name="method-i-read_template_to_hash"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">read_template_to_hash</span><span
-            class="method-args">(*tmpl)</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          
-          
-
-          
-          <div class="method-source-code"
-            id="read_template_to_hash-source">
-<pre>
-<span class="ruby-comment"># File lib/binaryio/readable.rb, line 163</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">read_template_to_hash</span>(*<span class="ruby-identifier">tmpl</span>)
-  <span class="ruby-identifier">hash</span> = {}
-  <span class="ruby-identifier">tmpl</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">key</span>, <span class="ruby-identifier">typ</span><span class="ruby-operator">|</span>
-    <span class="ruby-identifier">hash</span>[<span class="ruby-identifier">key</span>] = <span class="ruby-identifier">send</span>(<span class="ruby-node">&quot;read_#{typ}&quot;</span>)
-  <span class="ruby-keyword">end</span>
-  <span class="ruby-identifier">hash</span>
-<span class="ruby-keyword">end</span></pre>
-          </div>
-          
-        </div>
-
-        
-      </div>
-
-    
-      <div id="read_uint8-method" class="method-detail method-alias">
-        <a name="method-i-read_uint8"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">read_uint8</span><span
-            class="method-args">()</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          <h2>Aliases</h2>
-          
-
-          
-        </div>
-
-        
-      </div>
-
-    
-      <div id="read_word16_big-method" class="method-detail ">
-        <a name="method-i-read_word16_big"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">read_word16_big</span><span
-            class="method-args">()</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          
-          
-
-          
-          <div class="method-source-code"
-            id="read_word16_big-source">
-<pre>
-<span class="ruby-comment"># File lib/binaryio/readable.rb, line 48</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">read_word16_big</span>
-  <span class="ruby-identifier">ru</span>(<span class="ruby-value">2</span>, <span class="ruby-string">'n'</span>)
-<span class="ruby-keyword">end</span></pre>
-          </div>
-          
-        </div>
-
-        
-      </div>
-
-    
-      <div id="read_word16_little-method" class="method-detail ">
-        <a name="method-i-read_word16_little"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">read_word16_little</span><span
-            class="method-args">()</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          
-          
-
-          
-          <div class="method-source-code"
-            id="read_word16_little-source">
-<pre>
-<span class="ruby-comment"># File lib/binaryio/readable.rb, line 44</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">read_word16_little</span>
-  <span class="ruby-identifier">ru</span>(<span class="ruby-value">2</span>, <span class="ruby-string">'v'</span>)
-<span class="ruby-keyword">end</span></pre>
-          </div>
-          
-        </div>
-
-        
-      </div>
-
-    
-      <div id="read_word16_native-method" class="method-detail ">
-        <a name="method-i-read_word16_native"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">read_word16_native</span><span
-            class="method-args">()</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          <h3>Unsigned</h3>
-          
-
-          
-          <div class="method-source-code"
-            id="read_word16_native-source">
-<pre>
-<span class="ruby-comment"># File lib/binaryio/readable.rb, line 40</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">read_word16_native</span>
-  <span class="ruby-identifier">ru</span>(<span class="ruby-value">2</span>, <span class="ruby-string">'S'</span>)
-<span class="ruby-keyword">end</span></pre>
-          </div>
-          
-        </div>
-
-        
-      </div>
-
-    
-      <div id="read_word32_big-method" class="method-detail ">
-        <a name="method-i-read_word32_big"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">read_word32_big</span><span
-            class="method-args">()</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          
-          
-
-          
-          <div class="method-source-code"
-            id="read_word32_big-source">
-<pre>
-<span class="ruby-comment"># File lib/binaryio/readable.rb, line 80</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">read_word32_big</span>
-  <span class="ruby-identifier">ru</span>(<span class="ruby-value">4</span>, <span class="ruby-string">'N'</span>)
-<span class="ruby-keyword">end</span></pre>
-          </div>
-          
-        </div>
-
-        
-      </div>
-
-    
-      <div id="read_word32_little-method" class="method-detail ">
-        <a name="method-i-read_word32_little"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">read_word32_little</span><span
-            class="method-args">()</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          
-          
-
-          
-          <div class="method-source-code"
-            id="read_word32_little-source">
-<pre>
-<span class="ruby-comment"># File lib/binaryio/readable.rb, line 76</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">read_word32_little</span>
-  <span class="ruby-identifier">ru</span>(<span class="ruby-value">4</span>, <span class="ruby-string">'V'</span>)
-<span class="ruby-keyword">end</span></pre>
-          </div>
-          
-        </div>
-
-        
-      </div>
-
-    
-      <div id="read_word32_native-method" class="method-detail ">
-        <a name="method-i-read_word32_native"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">read_word32_native</span><span
-            class="method-args">()</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          <h3>Unsigned</h3>
-          
-
-          
-          <div class="method-source-code"
-            id="read_word32_native-source">
-<pre>
-<span class="ruby-comment"># File lib/binaryio/readable.rb, line 72</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">read_word32_native</span>
-  <span class="ruby-identifier">ru</span>(<span class="ruby-value">4</span>, <span class="ruby-string">'L'</span>)
-<span class="ruby-keyword">end</span></pre>
-          </div>
-          
-        </div>
-
-        
-      </div>
-
-    
-      <div id="read_word8-method" class="method-detail ">
-        <a name="method-i-read_word8"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">read_word8</span><span
-            class="method-args">()</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          <p>no byteorder for 8 bit!</p>
-          
-
-          
-          <div class="method-source-code"
-            id="read_word8-source">
-<pre>
-<span class="ruby-comment"># File lib/binaryio/readable.rb, line 28</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">read_word8</span>
-  <span class="ruby-identifier">ru</span>(<span class="ruby-value">1</span>, <span class="ruby-string">'C'</span>)
-<span class="ruby-keyword">end</span></pre>
-          </div>
-          
-        </div>
-
-        
-        <div class="aliases">
-          Also aliased as: <a href="Readable.html#method-i-read_uint8">read_uint8</a>
-        </div>
-        
-      </div>
-
-    
-      <div id="readn-method" class="method-detail ">
-        <a name="method-i-readn"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">readn</span><span
-            class="method-args">(n)</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          <p>read exactly n characters, otherwise raise an exception.</p>
-          
-
-          
-          <div class="method-source-code"
-            id="readn-source">
-<pre>
-<span class="ruby-comment"># File lib/binaryio/readable.rb, line 172</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">readn</span>(<span class="ruby-identifier">n</span>)
-  <span class="ruby-identifier">str</span> = <span class="ruby-identifier">read</span>(<span class="ruby-identifier">n</span>)
-  <span class="ruby-identifier">raise</span> <span class="ruby-node">&quot;couldn't read #{n} characters&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">str</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">str</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">n</span>
-  <span class="ruby-identifier">str</span>
-<span class="ruby-keyword">end</span></pre>
-          </div>
-          
-        </div>
-
-        
-      </div>
-
-    
-    </div>
-  
 
   </div>
+</div>
+<div class="tags">
+  
+</div>
 
 
-  <div id="rdoc-debugging-section-dump" class="debugging-section">
   
-    <p>Disabled; run with --debug to generate this.</p>
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#byte_order-instance_method" title="#byte_order (instance method)">- (Object) <strong>byte_order</strong> </a>
+    
+
+    
+      (also: #byteorder)
+    
+  </span>
   
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>default is native byte-order.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#byte_order%3D-instance_method" title="#byte_order= (instance method)">- (Object) <strong>byte_order=</strong>(new_byteorder) </a>
+    
+
+    
+      (also: #byteorder=)
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#read_cstring-instance_method" title="#read_cstring (instance method)">- (Object) <strong>read_cstring</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#read_int16_big-instance_method" title="#read_int16_big (instance method)">- (Object) <strong>read_int16_big</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#read_int16_little-instance_method" title="#read_int16_little (instance method)">- (Object) <strong>read_int16_little</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#read_int16_native-instance_method" title="#read_int16_native (instance method)">- (Object) <strong>read_int16_native</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<h3>Signed.</h3>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#read_int32_big-instance_method" title="#read_int32_big (instance method)">- (Object) <strong>read_int32_big</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#read_int32_little-instance_method" title="#read_int32_little (instance method)">- (Object) <strong>read_int32_little</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#read_int32_native-instance_method" title="#read_int32_native (instance method)">- (Object) <strong>read_int32_native</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<h3>Signed.</h3>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#read_int8-instance_method" title="#read_int8 (instance method)">- (Object) <strong>read_int8</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#read_template-instance_method" title="#read_template (instance method)">- (Object) <strong>read_template</strong>(*tmpl, &amp;block) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#read_template_to_hash-instance_method" title="#read_template_to_hash (instance method)">- (Object) <strong>read_template_to_hash</strong>(*tmpl) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#read_word16_big-instance_method" title="#read_word16_big (instance method)">- (Object) <strong>read_word16_big</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#read_word16_little-instance_method" title="#read_word16_little (instance method)">- (Object) <strong>read_word16_little</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#read_word16_native-instance_method" title="#read_word16_native (instance method)">- (Object) <strong>read_word16_native</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<h3>Unsigned.</h3>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#read_word32_big-instance_method" title="#read_word32_big (instance method)">- (Object) <strong>read_word32_big</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#read_word32_little-instance_method" title="#read_word32_little (instance method)">- (Object) <strong>read_word32_little</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#read_word32_native-instance_method" title="#read_word32_native (instance method)">- (Object) <strong>read_word32_native</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<h3>Unsigned.</h3>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#readn-instance_method" title="#readn (instance method)">- (Object) <strong>readn</strong>(n) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>read exactly n characters, otherwise raise an exception.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="byte_order-instance_method">
+  
+    - (<tt>Object</tt>) <strong>byte_order</strong> 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='byteorder-instance_method'>byteorder</span></span>
+    </span>
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>default is native byte-order</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+13
+14
+15</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/binaryio/readable.rb', line 13</span>
+
+<span class='def def kw'>def</span> <span class='byte_order identifier id'>byte_order</span>
+  <span class='@byte_order ivar id'>@byte_order</span> <span class='orop op'>||</span> <span class='ByteOrder constant id'>ByteOrder</span><span class='colon2 op'>::</span><span class='Native constant id'>Native</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="byte_order=-instance_method">
+  
+    - (<tt>Object</tt>) <strong>byte_order=</strong>(new_byteorder) 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='byteorder=-instance_method'>byteorder=</span></span>
+    </span>
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+17
+18
+19</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/binaryio/readable.rb', line 17</span>
+
+<span class='def def kw'>def</span> <span class='byte_order= identifier id'>byte_order=</span><span class='lparen token'>(</span><span class='new_byteorder identifier id'>new_byteorder</span><span class='rparen token'>)</span>
+  <span class='@byte_order ivar id'>@byte_order</span> <span class='assign token'>=</span> <span class='new_byteorder identifier id'>new_byteorder</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="read_cstring-instance_method">
+  
+    - (<tt>Object</tt>) <strong>read_cstring</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+127
+128
+129
+130
+131
+132
+133</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/binaryio/readable.rb', line 127</span>
+
+<span class='def def kw'>def</span> <span class='read_cstring identifier id'>read_cstring</span>
+  <span class='str identifier id'>str</span> <span class='assign token'>=</span> <span class='string val'>&quot;&quot;</span>
+  <span class='while while kw'>while</span> <span class='lparen token'>(</span><span class='c identifier id'>c</span><span class='assign token'>=</span><span class='readn identifier id'>readn</span><span class='lparen token'>(</span><span class='integer val'>1</span><span class='rparen token'>)</span><span class='rparen token'>)</span> <span class='neq op'>!=</span> <span class='string val'>&quot;\0&quot;</span>
+    <span class='str identifier id'>str</span> <span class='lshft op'>&lt;&lt;</span> <span class='c identifier id'>c</span>
+  <span class='end end kw'>end</span>
+  <span class='str identifier id'>str</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="read_int16_big-instance_method">
+  
+    - (<tt>Object</tt>) <strong>read_int16_big</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+63
+64
+65
+66</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/binaryio/readable.rb', line 63</span>
+
+<span class='def def kw'>def</span> <span class='read_int16_big identifier id'>read_int16_big</span>
+  <span class='comment val'># swap bytes if native=little (but we want big)</span>
+  <span class='ru_swap identifier id'>ru_swap</span><span class='lparen token'>(</span><span class='integer val'>2</span><span class='comma token'>,</span> <span class='string val'>'s'</span><span class='comma token'>,</span> <span class='ByteOrder constant id'>ByteOrder</span><span class='colon2 op'>::</span><span class='Little constant id'>Little</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="read_int16_little-instance_method">
+  
+    - (<tt>Object</tt>) <strong>read_int16_little</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+58
+59
+60
+61</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/binaryio/readable.rb', line 58</span>
+
+<span class='def def kw'>def</span> <span class='read_int16_little identifier id'>read_int16_little</span>
+  <span class='comment val'># swap bytes if native=big (but we want little)</span>
+  <span class='ru_swap identifier id'>ru_swap</span><span class='lparen token'>(</span><span class='integer val'>2</span><span class='comma token'>,</span> <span class='string val'>'s'</span><span class='comma token'>,</span> <span class='ByteOrder constant id'>ByteOrder</span><span class='colon2 op'>::</span><span class='Big constant id'>Big</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="read_int16_native-instance_method">
+  
+    - (<tt>Object</tt>) <strong>read_int16_native</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<h3>Signed</h3>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+54
+55
+56</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/binaryio/readable.rb', line 54</span>
+
+<span class='def def kw'>def</span> <span class='read_int16_native identifier id'>read_int16_native</span>
+  <span class='ru identifier id'>ru</span><span class='lparen token'>(</span><span class='integer val'>2</span><span class='comma token'>,</span> <span class='string val'>'s'</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="read_int32_big-instance_method">
+  
+    - (<tt>Object</tt>) <strong>read_int32_big</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+95
+96
+97
+98</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/binaryio/readable.rb', line 95</span>
+
+<span class='def def kw'>def</span> <span class='read_int32_big identifier id'>read_int32_big</span>
+  <span class='comment val'># swap bytes if native=little (but we want big)</span>
+  <span class='ru_swap identifier id'>ru_swap</span><span class='lparen token'>(</span><span class='integer val'>4</span><span class='comma token'>,</span> <span class='string val'>'l'</span><span class='comma token'>,</span> <span class='ByteOrder constant id'>ByteOrder</span><span class='colon2 op'>::</span><span class='Little constant id'>Little</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="read_int32_little-instance_method">
+  
+    - (<tt>Object</tt>) <strong>read_int32_little</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+90
+91
+92
+93</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/binaryio/readable.rb', line 90</span>
+
+<span class='def def kw'>def</span> <span class='read_int32_little identifier id'>read_int32_little</span>
+  <span class='comment val'># swap bytes if native=big (but we want little)</span>
+  <span class='ru_swap identifier id'>ru_swap</span><span class='lparen token'>(</span><span class='integer val'>4</span><span class='comma token'>,</span> <span class='string val'>'l'</span><span class='comma token'>,</span> <span class='ByteOrder constant id'>ByteOrder</span><span class='colon2 op'>::</span><span class='Big constant id'>Big</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="read_int32_native-instance_method">
+  
+    - (<tt>Object</tt>) <strong>read_int32_native</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<h3>Signed</h3>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+86
+87
+88</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/binaryio/readable.rb', line 86</span>
+
+<span class='def def kw'>def</span> <span class='read_int32_native identifier id'>read_int32_native</span>
+  <span class='ru identifier id'>ru</span><span class='lparen token'>(</span><span class='integer val'>4</span><span class='comma token'>,</span> <span class='string val'>'l'</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="read_int8-instance_method">
+  
+    - (<tt>Object</tt>) <strong>read_int8</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+32
+33
+34</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/binaryio/readable.rb', line 32</span>
+
+<span class='def def kw'>def</span> <span class='read_int8 identifier id'>read_int8</span>
+  <span class='ru identifier id'>ru</span><span class='lparen token'>(</span><span class='integer val'>1</span><span class='comma token'>,</span> <span class='string val'>'c'</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="read_template-instance_method">
+  
+    - (<tt>Object</tt>) <strong>read_template</strong>(*tmpl, &amp;block) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/binaryio/readable.rb', line 138</span>
+
+<span class='def def kw'>def</span> <span class='read_template identifier id'>read_template</span><span class='lparen token'>(</span><span class='mult op'>*</span><span class='tmpl identifier id'>tmpl</span><span class='comma token'>,</span> <span class='bitand op'>&amp;</span><span class='block identifier id'>block</span><span class='rparen token'>)</span>
+  <span class='arr identifier id'>arr</span> <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='rbrack token'>]</span> <span class='if if_mod kw'>if</span> <span class='block identifier id'>block</span><span class='dot token'>.</span><span class='nil? fid id'>nil?</span>
+  <span class='rep identifier id'>rep</span> <span class='assign token'>=</span> <span class='integer val'>1</span> 
+  <span class='tmpl identifier id'>tmpl</span><span class='dot token'>.</span><span class='each identifier id'>each</span> <span class='lbrace token'>{</span> <span class='bitor op'>|</span><span class='spec identifier id'>spec</span><span class='bitor op'>|</span>
+    <span class='case case kw'>case</span> <span class='spec identifier id'>spec</span>
+    <span class='when when kw'>when</span> <span class='Fixnum constant id'>Fixnum</span>
+      <span class='rep identifier id'>rep</span> <span class='assign token'>=</span> <span class='spec identifier id'>spec</span>
+    <span class='when when kw'>when</span> <span class='Symbol constant id'>Symbol</span><span class='comma token'>,</span> <span class='String constant id'>String</span>
+      <span class='rep identifier id'>rep</span><span class='dot token'>.</span><span class='times identifier id'>times</span> <span class='do do kw'>do</span> 
+        <span class='val identifier id'>val</span> <span class='assign token'>=</span> <span class='send identifier id'>send</span><span class='lparen token'>(</span><span class='dstring node'>&quot;read_#{spec}&quot;</span><span class='rparen token'>)</span>
+        <span class='if if kw'>if</span> <span class='block identifier id'>block</span><span class='dot token'>.</span><span class='nil? fid id'>nil?</span>
+          <span class='arr identifier id'>arr</span> <span class='lshft op'>&lt;&lt;</span> <span class='val identifier id'>val</span> 
+        <span class='else else kw'>else</span>
+          <span class='block identifier id'>block</span><span class='dot token'>.</span><span class='call identifier id'>call</span><span class='lparen token'>(</span><span class='val identifier id'>val</span><span class='rparen token'>)</span>
+        <span class='end end kw'>end</span>
+      <span class='end end kw'>end</span>
+      <span class='rep identifier id'>rep</span> <span class='assign token'>=</span> <span class='integer val'>1</span>
+    <span class='else else kw'>else</span>
+      <span class='raise identifier id'>raise</span>
+    <span class='end end kw'>end</span>
+  <span class='rbrace token'>}</span>
+  <span class='arr identifier id'>arr</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="read_template_to_hash-instance_method">
+  
+    - (<tt>Object</tt>) <strong>read_template_to_hash</strong>(*tmpl) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+163
+164
+165
+166
+167
+168
+169</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/binaryio/readable.rb', line 163</span>
+
+<span class='def def kw'>def</span> <span class='read_template_to_hash identifier id'>read_template_to_hash</span><span class='lparen token'>(</span><span class='mult op'>*</span><span class='tmpl identifier id'>tmpl</span><span class='rparen token'>)</span>
+  <span class='hash identifier id'>hash</span> <span class='assign token'>=</span> <span class='lbrace token'>{</span><span class='rbrace token'>}</span>
+  <span class='tmpl identifier id'>tmpl</span><span class='dot token'>.</span><span class='each identifier id'>each</span> <span class='do do kw'>do</span> <span class='bitor op'>|</span><span class='key identifier id'>key</span><span class='comma token'>,</span> <span class='typ identifier id'>typ</span><span class='bitor op'>|</span>
+    <span class='hash identifier id'>hash</span><span class='lbrack token'>[</span><span class='key identifier id'>key</span><span class='rbrack token'>]</span> <span class='assign token'>=</span> <span class='send identifier id'>send</span><span class='lparen token'>(</span><span class='dstring node'>&quot;read_#{typ}&quot;</span><span class='rparen token'>)</span>
+  <span class='end end kw'>end</span>
+  <span class='hash identifier id'>hash</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="read_word16_big-instance_method">
+  
+    - (<tt>Object</tt>) <strong>read_word16_big</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+48
+49
+50</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/binaryio/readable.rb', line 48</span>
+
+<span class='def def kw'>def</span> <span class='read_word16_big identifier id'>read_word16_big</span>
+  <span class='ru identifier id'>ru</span><span class='lparen token'>(</span><span class='integer val'>2</span><span class='comma token'>,</span> <span class='string val'>'n'</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="read_word16_little-instance_method">
+  
+    - (<tt>Object</tt>) <strong>read_word16_little</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+44
+45
+46</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/binaryio/readable.rb', line 44</span>
+
+<span class='def def kw'>def</span> <span class='read_word16_little identifier id'>read_word16_little</span>
+  <span class='ru identifier id'>ru</span><span class='lparen token'>(</span><span class='integer val'>2</span><span class='comma token'>,</span> <span class='string val'>'v'</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="read_word16_native-instance_method">
+  
+    - (<tt>Object</tt>) <strong>read_word16_native</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<h3>Unsigned</h3>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+40
+41
+42</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/binaryio/readable.rb', line 40</span>
+
+<span class='def def kw'>def</span> <span class='read_word16_native identifier id'>read_word16_native</span>
+  <span class='ru identifier id'>ru</span><span class='lparen token'>(</span><span class='integer val'>2</span><span class='comma token'>,</span> <span class='string val'>'S'</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="read_word32_big-instance_method">
+  
+    - (<tt>Object</tt>) <strong>read_word32_big</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+80
+81
+82</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/binaryio/readable.rb', line 80</span>
+
+<span class='def def kw'>def</span> <span class='read_word32_big identifier id'>read_word32_big</span>
+  <span class='ru identifier id'>ru</span><span class='lparen token'>(</span><span class='integer val'>4</span><span class='comma token'>,</span> <span class='string val'>'N'</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="read_word32_little-instance_method">
+  
+    - (<tt>Object</tt>) <strong>read_word32_little</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+76
+77
+78</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/binaryio/readable.rb', line 76</span>
+
+<span class='def def kw'>def</span> <span class='read_word32_little identifier id'>read_word32_little</span>
+  <span class='ru identifier id'>ru</span><span class='lparen token'>(</span><span class='integer val'>4</span><span class='comma token'>,</span> <span class='string val'>'V'</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="read_word32_native-instance_method">
+  
+    - (<tt>Object</tt>) <strong>read_word32_native</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<h3>Unsigned</h3>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+72
+73
+74</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/binaryio/readable.rb', line 72</span>
+
+<span class='def def kw'>def</span> <span class='read_word32_native identifier id'>read_word32_native</span>
+  <span class='ru identifier id'>ru</span><span class='lparen token'>(</span><span class='integer val'>4</span><span class='comma token'>,</span> <span class='string val'>'L'</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="readn-instance_method">
+  
+    - (<tt>Object</tt>) <strong>readn</strong>(n) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>read exactly n characters, otherwise raise an exception.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+172
+173
+174
+175
+176</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/binaryio/readable.rb', line 172</span>
+
+<span class='def def kw'>def</span> <span class='readn identifier id'>readn</span><span class='lparen token'>(</span><span class='n identifier id'>n</span><span class='rparen token'>)</span>
+  <span class='str identifier id'>str</span> <span class='assign token'>=</span> <span class='read identifier id'>read</span><span class='lparen token'>(</span><span class='n identifier id'>n</span><span class='rparen token'>)</span>
+  <span class='raise identifier id'>raise</span> <span class='dstring node'>&quot;couldn't read #{n} characters&quot;</span> <span class='if if_mod kw'>if</span> <span class='str identifier id'>str</span><span class='dot token'>.</span><span class='nil? fid id'>nil?</span> <span class='or or kw'>or</span> <span class='str identifier id'>str</span><span class='dot token'>.</span><span class='size identifier id'>size</span> <span class='neq op'>!=</span> <span class='n identifier id'>n</span>
+  <span class='str identifier id'>str</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
   </div>
 
-</main>
-</body>
+</div>
+    
+    <div id="footer">
+  Generated on Sun May 15 15:47:14 2011 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.6.7 (ruby-1.8.7).
+</div>
+
+  </body>
 </html>
-

@@ -1,198 +1,72 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title>Module: BinaryIO::ByteOrder</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
 
-  <title>Module: BinaryIO::ByteOrder</title>
+<script type="text/javascript" charset="utf-8">
+  relpath = '..';
+  if (relpath != '') relpath += '/';
+</script>
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
 
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
   
-    <link rel="SHORTCUT ICON" href="../assets/icon/module.png">
+    <a href="../_index.html">Index (B)</a> &raquo; 
+    <span class='title'><span class='object_link'><a href="../BinaryIO.html" title="BinaryIO (class)">BinaryIO</a></span></span>
+     &raquo; 
+    <span class="title">ByteOrder</span>
   
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
 
-  <link type="text/css" rel="stylesheet" href="../assets/rdoc.css" media="screen" />
-  <link type="text/css" rel="stylesheet" href="../assets/highlight/styles/github.css" title="GitHub" />
+      <div id="search">
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
+</div>
 
-  <script type="text/javascript" charset="utf-8" src="../assets/jquery.js"></script>
-  <script type="text/javascript" charset="utf-8" src="../assets/highlight/highlight.pack.js"></script>
-  <script type="text/javascript" charset="utf-8" src="../assets/quicksearch.js"></script>
-  <script type="text/javascript" charset="utf-8" src="../assets/main.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready( function() {
-      $('#documentation pre').wrapInner('<code></code>');
-      hljs.tabReplace = '    ';
-      hljs.initHighlightingOnLoad('ruby');
-
-	    hookSourceViews();
-	    hookDebuggingToggle();
-	    hookQuickSearch();
-	    highlightLocationTarget();
-
-	    $('ul.link-list a').bind( "click", highlightClickTarget );
-    });
-  </script>
-</head>
-<body class="module">
-<div id="main">
-
-  <div class="head">
-    <h1>
-      
-        <img src="../assets/icon/module.png" align="absmiddle">&nbsp;
-      
-      <a href="../index.html">&quot;BinaryIO&quot;</a>&nbsp;
-      <a href="/">BinaryIO::ByteOrder</a>
-    </h1>
-  </div>
-
-  <div id="metadata">
-    <div id="project-metadata">
-
-      <div id="file-list-section" class="section">
-        <h3 class="section-header">In Files</h3>
-        <div class="section-body">
-          <ul>
-          
-            <li class="file"><a href="../lib/binaryio/byte_order_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
-              class="thickbox" title="lib/binaryio/byte_order.rb">lib/binaryio/byte_order.rb</a></li>
-          
-          </ul>
-        </div>
-      </div>
-
-      <!-- What about Git info, or Hg info? This seems almost silly, albeit kind of cool. -->
-      <!-- TODO: generalize this for all SCMs -->
-
-      
+      <div class="clear"></div>
     </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><h1>Module: BinaryIO::ByteOrder
+  
+  
+  
+</h1>
 
-    <div id="class-metadata">
+<dl class="box">
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">lib/binaryio/byte_order.rb</dd>
+  
+</dl>
+<div class="clear"></div>
 
-      <!-- Parent Class -->
-      
-
-      <!-- Namespace Contents -->
-      
-
-      <!-- Method Quickref -->
-      
-      <div id="method-list-section" class="section">
-        <h3 class="section-header">Methods</h3>
-        <ul class="link-list">
-          
-            
-            <li class="singleton">
-              <a href="#method-c-big-3F">::big?</a>
-            </li>
-          
-            
-            <li class="singleton">
-              <a href="#method-c-big_endian-3F">::big_endian?</a>
-            </li>
-          
-            
-            <li class="singleton">
-              <a href="#method-c-byte_order">::byte_order</a>
-            </li>
-          
-            
-            <li class="singleton">
-              <a href="#method-c-byteorder">::byteorder</a>
-            </li>
-          
-            
-            <li class="singleton">
-              <a href="#method-c-little-3F">::little?</a>
-            </li>
-          
-            
-            <li class="singleton">
-              <a href="#method-c-little_endian-3F">::little_endian?</a>
-            </li>
-          
-            
-            <li class="singleton">
-              <a href="#method-c-network-3F">::network?</a>
-            </li>
-          
-        </ul>
-      </div>
-      
-
-      <!-- Included Modules -->
-      
-    </div>
-
-    <div id="project-metadata">
-      
-      
-      <div id="fileindex-section" class="section project-section">
-        <h3 class="section-header">Information</h3>
-        <ul>
-        
-          <li class="file"><a href="../Version.html">Version</a></li>
-        
-          <li class="file"><a href="../Profile.html">Profile</a></li>
-        
-          <li class="file"><a href="../History_rdoc.html">History.rdoc</a></li>
-        
-          <li class="file"><a href="../README_rdoc.html">README.rdoc</a></li>
-        
-          <li class="file"><a href="../APACHE2_txt.html">APACHE2.txt</a></li>
-        
-        </ul>
-      </div>
-      
-
-      <div id="classindex-section" class="section project-section">
-        <h3 class="section-header">Class Index
-          <span class="search-toggle"><img src="../assets/icon/find.png"
-            height="16" width="16" alt="[+]"
-            title="show/hide quicksearch" /></span></h3>
-        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
-        <fieldset>
-          <legend>Quicksearch</legend>
-          <input type="text" name="quicksearch" value=""
-            class="quicksearch-field" />
-        </fieldset>
-        </form>
-
-        <!-- classpage.html : classes -->
-        <ul class="link-list">
-        
-          <li class="class"><a href="../BinaryIO.html">BinaryIO</a></li>
-        
-          <li class="module"><a href="../BinaryIO/ByteOrder.html">BinaryIO::ByteOrder</a></li>
-        
-          <li class="module"><a href="../BinaryIO/Readable.html">BinaryIO::Readable</a></li>
-        
-          <li class="module"><a href="../BinaryIO/Writable.html">BinaryIO::Writable</a></li>
-        
-        </ul>
-        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
-      </div>
-    </div>
-
-    <div id="validator-badges">
-      
-      <div style="float: right; margin-right: 5px;">
-        <a href="http://validator.w3.org/check/referer"><img src="../assets/icon/check.png" alt="[Validate]" height="16" width="16" /></a>
-      </div>
-      Generated with <a href="http://rubyworks.github.com/newfish">Newfish</a> 0.2.0
-      <br/><br/>
-    </div>
-  </div>
-
-  <div id="documentation">
-
-    <div id="description">
-      
-        <h1>ByteOrder</h1>
-      
-
-      
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
 <p>Function module that provides the underlying byte order of the current
 system archiecture.</p>
 
@@ -200,259 +74,295 @@ system archiecture.</p>
 
 <p>Copyright © Michael Neumann</p>
 
-    </div>
-
-    <!-- Constants -->
-    
-    <div id="constants-list" class="section">
-      <h3 class="section-header">Constants</h3>
-      <dl>
-      
-        <dt><a name="Native">Native</a></dt>
-        
-        <dd class="description"></dd>
-        
-      
-        <dt><a name="BigEndian">BigEndian</a></dt>
-        
-        <dd class="description"></dd>
-        
-      
-        <dt><a name="LittleEndian">LittleEndian</a></dt>
-        
-        <dd class="description"></dd>
-        
-      
-      </dl>
-    </div>
-    
-
-    <!-- Attributes -->
-    
-
-    <!-- Methods -->
-    
-    <div id="public-class-method-details" class="method-section section">
-      <h3 class="section-header">Public Class Methods</h3>
-
-    
-      <div id="big-3F-method" class="method-detail method-alias">
-        <a name="method-c-big-3F"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">big?</span><span
-            class="method-args">()</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          
-          
-
-          
-        </div>
-
-        
-      </div>
-
-    
-      <div id="big_endian-3F-method" class="method-detail ">
-        <a name="method-c-big_endian-3F"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">big_endian?</span><span
-            class="method-args">()</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          
-          
-
-          
-          <div class="method-source-code"
-            id="big_endian-3F-source">
-<pre>
-<span class="ruby-comment"># File lib/binaryio/byte_order.rb, line 32</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">big_endian?</span>
-  <span class="ruby-identifier">byte_order</span> <span class="ruby-operator">==</span> <span class="ruby-constant">BigEndian</span>
-<span class="ruby-keyword">end</span></pre>
-          </div>
-          
-        </div>
-
-        
-        <div class="aliases">
-          Also aliased as: <a href="ByteOrder.html#method-i-big-3F">big?</a>, <a href="ByteOrder.html#method-i-network-3F">network?</a>
-        </div>
-        
-      </div>
-
-    
-      <div id="byte_order-method" class="method-detail ">
-        <a name="method-c-byte_order"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">byte_order</span><span
-            class="method-args">()</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          <p>examines the byte order of the underlying machine</p>
-          
-
-          
-          <div class="method-source-code"
-            id="byte_order-source">
-<pre>
-<span class="ruby-comment"># File lib/binaryio/byte_order.rb, line 18</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">byte_order</span>
-  <span class="ruby-keyword">if</span> [<span class="ruby-value">0x12345678</span>].<span class="ruby-identifier">pack</span>(<span class="ruby-string">&quot;L&quot;</span>) <span class="ruby-operator">==</span> <span class="ruby-string">&quot;\x12\x34\x56\x78&quot;</span>
-    <span class="ruby-constant">BigEndian</span>
-  <span class="ruby-keyword">else</span>
-    <span class="ruby-constant">LittleEndian</span>
-  <span class="ruby-keyword">end</span>
-<span class="ruby-keyword">end</span></pre>
-          </div>
-          
-        </div>
-
-        
-        <div class="aliases">
-          Also aliased as: <a href="ByteOrder.html#method-i-byteorder">byteorder</a>
-        </div>
-        
-      </div>
-
-    
-      <div id="byteorder-method" class="method-detail method-alias">
-        <a name="method-c-byteorder"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">byteorder</span><span
-            class="method-args">()</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          
-          
-
-          
-        </div>
-
-        
-      </div>
-
-    
-      <div id="little-3F-method" class="method-detail method-alias">
-        <a name="method-c-little-3F"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">little?</span><span
-            class="method-args">()</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          
-          
-
-          
-        </div>
-
-        
-      </div>
-
-    
-      <div id="little_endian-3F-method" class="method-detail ">
-        <a name="method-c-little_endian-3F"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">little_endian?</span><span
-            class="method-args">()</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          
-          
-
-          
-          <div class="method-source-code"
-            id="little_endian-3F-source">
-<pre>
-<span class="ruby-comment"># File lib/binaryio/byte_order.rb, line 28</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">little_endian?</span>
-  <span class="ruby-identifier">byte_order</span> <span class="ruby-operator">==</span> <span class="ruby-constant">LittleEndian</span>
-<span class="ruby-keyword">end</span></pre>
-          </div>
-          
-        </div>
-
-        
-        <div class="aliases">
-          Also aliased as: <a href="ByteOrder.html#method-i-little-3F">little?</a>
-        </div>
-        
-      </div>
-
-    
-      <div id="network-3F-method" class="method-detail method-alias">
-        <a name="method-c-network-3F"></a>
-
-        <div class="method-heading">
-        
-          <span class="method-name">network?</span><span
-            class="method-args">()</span>
-          <span class="method-click-advice">click to toggle source</span>
-        
-        </div>
-
-        <div class="method-description">
-          
-          
-          
-
-          
-        </div>
-
-        
-      </div>
-
-    
-    </div>
-  
 
   </div>
+</div>
+<div class="tags">
+  
+</div>
+  <h2>Constant Summary</h2>
+  
+    <dl class="constants">
+      
+        <dt id="Native-constant" class="">Native =
+          
+        </dt>
+        <dd><pre class="code"><span class='symbol val'>:Native</span>
+</pre></dd>
+      
+        <dt id="BigEndian-constant" class="">BigEndian =
+          
+        </dt>
+        <dd><pre class="code"><span class='Big constant id'>Big</span> <span class='assign token'>=</span> <span class='Network constant id'>Network</span> <span class='assign token'>=</span> <span class='symbol val'>:BigEndian</span>
+</pre></dd>
+      
+        <dt id="LittleEndian-constant" class="">LittleEndian =
+          
+        </dt>
+        <dd><pre class="code"><span class='Little constant id'>Little</span> <span class='assign token'>=</span> <span class='symbol val'>:LittleEndian</span>
+</pre></dd>
+      
+    </dl>
+  
 
 
-  <div id="rdoc-debugging-section-dump" class="debugging-section">
+
   
-    <p>Disabled; run with --debug to generate this.</p>
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#big_endian%3F-instance_method" title="#big_endian? (instance method)">- (Boolean) <strong>big_endian?</strong> </a>
+    
+
+    
+      (also: #network?, #big?)
+    
+  </span>
   
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#byte_order-instance_method" title="#byte_order (instance method)">- (Object) <strong>byte_order</strong> </a>
+    
+
+    
+      (also: #byteorder)
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>examines the byte order of the underlying machine.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#little_endian%3F-instance_method" title="#little_endian? (instance method)">- (Boolean) <strong>little_endian?</strong> </a>
+    
+
+    
+      (also: #little?)
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="big_endian?-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>big_endian?</strong> 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='network?-instance_method'>network?</span>, <span id='big?-instance_method'>big?</span></span>
+    </span>
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+32
+33
+34</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/binaryio/byte_order.rb', line 32</span>
+
+<span class='def def kw'>def</span> <span class='big_endian? fid id'>big_endian?</span>
+  <span class='byte_order identifier id'>byte_order</span> <span class='eq op'>==</span> <span class='BigEndian constant id'>BigEndian</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="byte_order-instance_method">
+  
+    - (<tt>Object</tt>) <strong>byte_order</strong> 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='byteorder-instance_method'>byteorder</span></span>
+    </span>
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>examines the byte order of the underlying machine</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+18
+19
+20
+21
+22
+23
+24</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/binaryio/byte_order.rb', line 18</span>
+
+<span class='def def kw'>def</span> <span class='byte_order identifier id'>byte_order</span>
+  <span class='if if kw'>if</span> <span class='lbrack token'>[</span><span class='integer val'>0x12345678</span><span class='rbrack token'>]</span><span class='dot token'>.</span><span class='pack identifier id'>pack</span><span class='lparen token'>(</span><span class='string val'>&quot;L&quot;</span><span class='rparen token'>)</span> <span class='eq op'>==</span> <span class='string val'>&quot;\x12\x34\x56\x78&quot;</span>
+    <span class='BigEndian constant id'>BigEndian</span>
+  <span class='else else kw'>else</span>
+    <span class='LittleEndian constant id'>LittleEndian</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="little_endian?-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>little_endian?</strong> 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='little?-instance_method'>little?</span></span>
+    </span>
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+28
+29
+30</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/binaryio/byte_order.rb', line 28</span>
+
+<span class='def def kw'>def</span> <span class='little_endian? fid id'>little_endian?</span>
+  <span class='byte_order identifier id'>byte_order</span> <span class='eq op'>==</span> <span class='LittleEndian constant id'>LittleEndian</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
   </div>
 
-</main>
-</body>
+</div>
+    
+    <div id="footer">
+  Generated on Sun May 15 15:47:13 2011 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.6.7 (ruby-1.8.7).
+</div>
+
+  </body>
 </html>
-

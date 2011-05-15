@@ -1,247 +1,178 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title>Class: BinaryIO</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
 
-  <title>Class: BinaryIO</title>
+<script type="text/javascript" charset="utf-8">
+  relpath = '';
+  if (relpath != '') relpath += '/';
+</script>
+<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
 
-  
-    <link rel="SHORTCUT ICON" href="./assets/icon/class.png">
-  
-
-  <link type="text/css" rel="stylesheet" href="./assets/rdoc.css" media="screen" />
-  <link type="text/css" rel="stylesheet" href="./assets/highlight/styles/github.css" title="GitHub" />
-
-  <script type="text/javascript" charset="utf-8" src="./assets/jquery.js"></script>
-  <script type="text/javascript" charset="utf-8" src="./assets/highlight/highlight.pack.js"></script>
-  <script type="text/javascript" charset="utf-8" src="./assets/quicksearch.js"></script>
-  <script type="text/javascript" charset="utf-8" src="./assets/main.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready( function() {
-      $('#documentation pre').wrapInner('<code></code>');
-      hljs.tabReplace = '    ';
-      hljs.initHighlightingOnLoad('ruby');
-
-	    hookSourceViews();
-	    hookDebuggingToggle();
-	    hookQuickSearch();
-	    highlightLocationTarget();
-
-	    $('ul.link-list a').bind( "click", highlightClickTarget );
-    });
-  </script>
-</head>
-<body class="class">
-<div id="main">
-
-  <div class="head">
-    <h1>
-      
-        <img src="./assets/icon/class.png" align="absmiddle">&nbsp;
-      
-      <a href="./index.html">&quot;BinaryIO&quot;</a>&nbsp;
-      <a href="/">BinaryIO</a>
-    </h1>
-  </div>
-
-  <div id="metadata">
-    <div id="project-metadata">
-
-      <div id="file-list-section" class="section">
-        <h3 class="section-header">In Files</h3>
-        <div class="section-body">
-          <ul>
-          
-            <li class="file"><a href="./lib/binaryio/readable_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
-              class="thickbox" title="lib/binaryio/readable.rb">lib/binaryio/readable.rb</a></li>
-          
-            <li class="file"><a href="./lib/binaryio/writable_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
-              class="thickbox" title="lib/binaryio/writable.rb">lib/binaryio/writable.rb</a></li>
-          
-            <li class="file"><a href="./lib/binaryio/version_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
-              class="thickbox" title="lib/binaryio/version.rb">lib/binaryio/version.rb</a></li>
-          
-            <li class="file"><a href="./lib/binaryio/io_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
-              class="thickbox" title="lib/binaryio/io.rb">lib/binaryio/io.rb</a></li>
-          
-            <li class="file"><a href="./lib/binaryio/byte_order_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
-              class="thickbox" title="lib/binaryio/byte_order.rb">lib/binaryio/byte_order.rb</a></li>
-          
-            <li class="file"><a href="./lib/binaryio_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
-              class="thickbox" title="lib/binaryio.rb">lib/binaryio.rb</a></li>
-          
-          </ul>
-        </div>
-      </div>
-
-      <!-- What about Git info, or Hg info? This seems almost silly, albeit kind of cool. -->
-      <!-- TODO: generalize this for all SCMs -->
-
-      
-    </div>
-
-    <div id="class-metadata">
-
-      <!-- Parent Class -->
-      
-      <div id="parent-class-section" class="section">
-        <h3 class="section-header">Parent</h3>
-        <ul>
-          
-            
-              <li class="class">IO</li>
-            
-          
-        </ul>
-      </div>
-      
-
-      <!-- Namespace Contents -->
-      
-      <div id="namespace-list-section" class="section">
-        <h3 class="section-header">Namespace</h3>
-        <ul class="link-list">
-          
-          <li class="module"><a href="BinaryIO/ByteOrder.html">BinaryIO::ByteOrder</a></li>
-          
-          <li class="module"><a href="BinaryIO/Readable.html">BinaryIO::Readable</a></li>
-          
-          <li class="module"><a href="BinaryIO/Writable.html">BinaryIO::Writable</a></li>
-          
-        </ul>
-      </div>
-      
-
-      <!-- Method Quickref -->
-      
-
-      <!-- Included Modules -->
-      
-      <div id="includes-section" class="section">
-        <h3 class="section-header">Included Modules</h3>
-        <ul class="link-list">
-        
-        
-          <li class="module"><a class="include" href="BinaryIO/Readable.html">BinaryIO::Readable</a></li>
-        
-        
-        
-          <li class="module"><a class="include" href="BinaryIO/Writable.html">BinaryIO::Writable</a></li>
-        
-        
-        </ul>
-      </div>
-      
-    </div>
-
-    <div id="project-metadata">
-      
-      
-      <div id="fileindex-section" class="section project-section">
-        <h3 class="section-header">Information</h3>
-        <ul>
-        
-          <li class="file"><a href="./Version.html">Version</a></li>
-        
-          <li class="file"><a href="./Profile.html">Profile</a></li>
-        
-          <li class="file"><a href="./History_rdoc.html">History.rdoc</a></li>
-        
-          <li class="file"><a href="./README_rdoc.html">README.rdoc</a></li>
-        
-          <li class="file"><a href="./APACHE2_txt.html">APACHE2.txt</a></li>
-        
-        </ul>
-      </div>
-      
-
-      <div id="classindex-section" class="section project-section">
-        <h3 class="section-header">Class Index
-          <span class="search-toggle"><img src="./assets/icon/find.png"
-            height="16" width="16" alt="[+]"
-            title="show/hide quicksearch" /></span></h3>
-        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
-        <fieldset>
-          <legend>Quicksearch</legend>
-          <input type="text" name="quicksearch" value=""
-            class="quicksearch-field" />
-        </fieldset>
-        </form>
-
-        <!-- classpage.html : classes -->
-        <ul class="link-list">
-        
-          <li class="class"><a href="./BinaryIO.html">BinaryIO</a></li>
-        
-          <li class="module"><a href="./BinaryIO/ByteOrder.html">BinaryIO::ByteOrder</a></li>
-        
-          <li class="module"><a href="./BinaryIO/Readable.html">BinaryIO::Readable</a></li>
-        
-          <li class="module"><a href="./BinaryIO/Writable.html">BinaryIO::Writable</a></li>
-        
-        </ul>
-        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
-      </div>
-    </div>
-
-    <div id="validator-badges">
-      
-      <div style="float: right; margin-right: 5px;">
-        <a href="http://validator.w3.org/check/referer"><img src="./assets/icon/check.png" alt="[Validate]" height="16" width="16" /></a>
-      </div>
-      Generated with <a href="http://rubyworks.github.com/newfish">Newfish</a> 0.2.0
-      <br/><br/>
-    </div>
-  </div>
-
-  <div id="documentation">
-
-    <div id="description">
-      
-        <h1>BinaryIO</h1>
-      
-
-      
-<p><a href="BinaryIO.html">BinaryIO</a> is a simple subclass of IO that
-includes the <a href="BinaryIO/Readable.html">BinaryIO::Readable</a> mixin,
-which is the core of BinaryIO’s functionality.</p>
-
-    </div>
-
-    <!-- Constants -->
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
     
-    <div id="constants-list" class="section">
-      <h3 class="section-header">Constants</h3>
-      <dl>
-      
-        <dt><a name="VERSION">VERSION</a></dt>
-        
-        <dd class="description"><p>Current version of <a href="BinaryIO.html">BinaryIO</a>.</p></dd>
-        
-      
-      </dl>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (B)</a> &raquo; 
+    
+    
+    <span class="title">BinaryIO</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
+</div>
+
+      <div class="clear"></div>
     </div>
     
-
-    <!-- Attributes -->
+    <iframe id="search_frame"></iframe>
     
+    <div id="content"><h1>Class: BinaryIO
+  
+  
+  
+</h1>
 
-    <!-- Methods -->
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">IO</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">IO</li>
+          
+            <li class="next">BinaryIO</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
     
+  
+  
+    
+  
+    
+      <dt class="r2">Includes:</dt>
+      <dd class="r2"><span class='object_link'><a href="BinaryIO/Readable.html" title="BinaryIO::Readable (module)">Readable</a></span>, <span class='object_link'><a href="BinaryIO/Writable.html" title="BinaryIO::Writable (module)">Writable</a></span></dd>
+      
+    
+  
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">lib/binaryio/io.rb<span class="defines">,<br />
+  lib/binaryio.rb,<br /> lib/binaryio/version.rb,<br /> lib/binaryio/writable.rb,<br /> lib/binaryio/readable.rb,<br /> lib/binaryio/byte_order.rb</span>
+</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>BinaryIO is a simple subclass of IO that includes the BinaryIO::Readable
+mixin, which is the core of BinaryIO’s functionality.</p>
+
 
   </div>
+</div>
+<div class="tags">
+  
+</div><h2>Defined Under Namespace</h2>
+<p class="children">
+   
+    
+      <strong class="modules">Modules:</strong> <span class='object_link'><a href="BinaryIO/ByteOrder.html" title="BinaryIO::ByteOrder (module)">ByteOrder</a></span>, <span class='object_link'><a href="BinaryIO/Readable.html" title="BinaryIO::Readable (module)">Readable</a></span>, <span class='object_link'><a href="BinaryIO/Writable.html" title="BinaryIO::Writable (module)">Writable</a></span>
+    
+   
+    
+  
+</p>
+
+  <h2>Constant Summary</h2>
+  
+    <dl class="constants">
+      
+        <dt id="VERSION-constant" class="">VERSION =
+          <div class="docstring">
+  <div class="discussion">
+    
+<p>Current version of BinaryIO.</p>
 
 
-  <div id="rdoc-debugging-section-dump" class="debugging-section">
-  
-    <p>Disabled; run with --debug to generate this.</p>
-  
   </div>
+</div>
+<div class="tags">
+  
+</div>
+        </dt>
+        <dd><pre class="code"><span class='string val'>&quot;1.1.1&quot;</span>
+</pre></dd>
+      
+    </dl>
+  
 
-</main>
-</body>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  <h2>Method Summary</h2>
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="BinaryIO/Writable.html" title="BinaryIO::Writable (module)">Writable</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="BinaryIO/Writable.html#write_int16_little-instance_method" title="BinaryIO::Writable#write_int16_little (method)">#write_int16_little</a></span>, <span class='object_link'><a href="BinaryIO/Writable.html#write_int16_native-instance_method" title="BinaryIO::Writable#write_int16_native (method)">#write_int16_native</a></span>, <span class='object_link'><a href="BinaryIO/Writable.html#write_int16_network-instance_method" title="BinaryIO::Writable#write_int16_network (method)">#write_int16_network</a></span>, <span class='object_link'><a href="BinaryIO/Writable.html#write_int32_little-instance_method" title="BinaryIO::Writable#write_int32_little (method)">#write_int32_little</a></span>, <span class='object_link'><a href="BinaryIO/Writable.html#write_int32_native-instance_method" title="BinaryIO::Writable#write_int32_native (method)">#write_int32_native</a></span>, <span class='object_link'><a href="BinaryIO/Writable.html#write_int32_network-instance_method" title="BinaryIO::Writable#write_int32_network (method)">#write_int32_network</a></span>, <span class='object_link'><a href="BinaryIO/Writable.html#write_int8-instance_method" title="BinaryIO::Writable#write_int8 (method)">#write_int8</a></span>, <span class='object_link'><a href="BinaryIO/Writable.html#write_word16_little-instance_method" title="BinaryIO::Writable#write_word16_little (method)">#write_word16_little</a></span>, <span class='object_link'><a href="BinaryIO/Writable.html#write_word16_native-instance_method" title="BinaryIO::Writable#write_word16_native (method)">#write_word16_native</a></span>, <span class='object_link'><a href="BinaryIO/Writable.html#write_word16_network-instance_method" title="BinaryIO::Writable#write_word16_network (method)">#write_word16_network</a></span>, <span class='object_link'><a href="BinaryIO/Writable.html#write_word32_little-instance_method" title="BinaryIO::Writable#write_word32_little (method)">#write_word32_little</a></span>, <span class='object_link'><a href="BinaryIO/Writable.html#write_word32_native-instance_method" title="BinaryIO::Writable#write_word32_native (method)">#write_word32_native</a></span>, <span class='object_link'><a href="BinaryIO/Writable.html#write_word32_network-instance_method" title="BinaryIO::Writable#write_word32_network (method)">#write_word32_network</a></span>, <span class='object_link'><a href="BinaryIO/Writable.html#write_word8-instance_method" title="BinaryIO::Writable#write_word8 (method)">#write_word8</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="BinaryIO/Readable.html" title="BinaryIO::Readable (module)">Readable</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="BinaryIO/Readable.html#byte_order-instance_method" title="BinaryIO::Readable#byte_order (method)">#byte_order</a></span>, <span class='object_link'><a href="BinaryIO/Readable.html#byte_order%3D-instance_method" title="BinaryIO::Readable#byte_order= (method)">#byte_order=</a></span>, <span class='object_link'><a href="BinaryIO/Readable.html#read_cstring-instance_method" title="BinaryIO::Readable#read_cstring (method)">#read_cstring</a></span>, <span class='object_link'><a href="BinaryIO/Readable.html#read_int16_big-instance_method" title="BinaryIO::Readable#read_int16_big (method)">#read_int16_big</a></span>, <span class='object_link'><a href="BinaryIO/Readable.html#read_int16_little-instance_method" title="BinaryIO::Readable#read_int16_little (method)">#read_int16_little</a></span>, <span class='object_link'><a href="BinaryIO/Readable.html#read_int16_native-instance_method" title="BinaryIO::Readable#read_int16_native (method)">#read_int16_native</a></span>, <span class='object_link'><a href="BinaryIO/Readable.html#read_int32_big-instance_method" title="BinaryIO::Readable#read_int32_big (method)">#read_int32_big</a></span>, <span class='object_link'><a href="BinaryIO/Readable.html#read_int32_little-instance_method" title="BinaryIO::Readable#read_int32_little (method)">#read_int32_little</a></span>, <span class='object_link'><a href="BinaryIO/Readable.html#read_int32_native-instance_method" title="BinaryIO::Readable#read_int32_native (method)">#read_int32_native</a></span>, <span class='object_link'><a href="BinaryIO/Readable.html#read_int8-instance_method" title="BinaryIO::Readable#read_int8 (method)">#read_int8</a></span>, <span class='object_link'><a href="BinaryIO/Readable.html#read_template-instance_method" title="BinaryIO::Readable#read_template (method)">#read_template</a></span>, <span class='object_link'><a href="BinaryIO/Readable.html#read_template_to_hash-instance_method" title="BinaryIO::Readable#read_template_to_hash (method)">#read_template_to_hash</a></span>, <span class='object_link'><a href="BinaryIO/Readable.html#read_word16_big-instance_method" title="BinaryIO::Readable#read_word16_big (method)">#read_word16_big</a></span>, <span class='object_link'><a href="BinaryIO/Readable.html#read_word16_little-instance_method" title="BinaryIO::Readable#read_word16_little (method)">#read_word16_little</a></span>, <span class='object_link'><a href="BinaryIO/Readable.html#read_word16_native-instance_method" title="BinaryIO::Readable#read_word16_native (method)">#read_word16_native</a></span>, <span class='object_link'><a href="BinaryIO/Readable.html#read_word32_big-instance_method" title="BinaryIO::Readable#read_word32_big (method)">#read_word32_big</a></span>, <span class='object_link'><a href="BinaryIO/Readable.html#read_word32_little-instance_method" title="BinaryIO::Readable#read_word32_little (method)">#read_word32_little</a></span>, <span class='object_link'><a href="BinaryIO/Readable.html#read_word32_native-instance_method" title="BinaryIO::Readable#read_word32_native (method)">#read_word32_native</a></span>, <span class='object_link'><a href="BinaryIO/Readable.html#readn-instance_method" title="BinaryIO::Readable#readn (method)">#readn</a></span></p>
+
+  
+
+</div>
+    
+    <div id="footer">
+  Generated on Sun May 15 15:47:14 2011 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.6.7 (ruby-1.8.7).
+</div>
+
+  </body>
 </html>
-

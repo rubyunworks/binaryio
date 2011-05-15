@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
-<title>Documentation by YARD 0.6.7</title>
+<title>File: HISTORY</title>
 <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
 <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
 
@@ -24,7 +24,7 @@
       <div id="menu">
   
     <a href="_index.html" title="Index">Index</a> &raquo; 
-    <span class="title">File: README</span>
+    <span class="title">File: HISTORY</span>
   
   
   <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
@@ -42,53 +42,54 @@
     <iframe id="search_frame"></iframe>
     
     <div id="content"><div id='filecontents'>
-<h1>BinaryIO</h1>
+<h1>RELEASE HISTORY</h1>
 
-<h2>DESCRIPTION</h2>
+<h2>1.1.1 / 2011-05-04</h2>
 
-<p>BinaryIO class is used to read and write binary data.</p>
+<p>This release is a simple administrative maintenance release. API wise
+notthing has changed since the last release.</p>
 
-<p>The BinaryIO class is built on the reusable mixins `BinaryIO::Readable` and
-`BinaryIO::Writable`. Readable solely depends one method, `#read(n)`, which
-must be defined in the class/module where the module is mixed. Likewise
-Writeable depends on `write(str)`.</p>
-
-<h2>HISTORY</h2>
-
-<p>Almost all of BinaryIO’s code was written by Michael Neumann as
-<tt>BinaryReader</tt>,  <tt>BinaryWriter</tt> and <tt>ByteOrder</tt>. These
-modules were distributed with Ruby Facets for some time, but when Facets
-began to strip itself of most non core extension libraries in 2009, these
-scripts were spun off as a separate project and reorganized to become the
-BinaryIO library.</p>
-
-<h2>RESOURCES</h2>
+<p>Changes:</p>
 <ul><li>
-<p>home: <a
-href="http://rubyworks.github.com/binaryio">rubyworks.github.com/binaryio</a></p>
-</li><li>
-<p>work: <a
-href="http://github.com/rubyworks/binaryio">github.com/rubyworks/binaryio</a></p>
-</li><li>
-<p>mail: <a
-href="http://groups.google/group/rubyworks-mailinglist">groups.google/group/rubyworks-mailinglist</a></p>
+<p>Administrative details.</p>
 </li></ul>
 
-<h2>HOW TO INSTALL</h2>
+<h2>1.1.0 / 2011-04-19</h2>
 
-<pre class="code">$ <span class='gem identifier id'>gem</span> <span class='install identifier id'>install</span> <span class='binaryio identifier id'>binaryio</span>
-</pre>
+<p>Dicovered that Writable was never added BinaryIO. This has been corrected.
+In the process the organization of the project has been improved.</p>
 
-<h2>LICENSE</h2>
+<p>Changes:</p>
+<ul><li>
+<p>Add Writable mixin.</p>
+</li><li>
+<p>Split mixins into separate project files.</p>
+</li></ul>
 
-<p>(Apache 2.0 License)</p>
+<h2>1.0.1 / 2010-03-06</h2>
 
-<p>Copyright © 2003 Michael Neumann</p>
+<p>This is a minor point release that does nothing but merge the library into
+a single file –since it is so small anyway. The license has also been
+changed to Apache 2.0.</p>
 
-<p>Copyright © 2009 Thomas Sawyer</p>
+<p>Changes:</p>
+<ul><li>
+<p>Merge `binaryio/readable.rb` and `binaryio/byteorder.rb` into
+`binaryio.rb`.</p>
+</li><li>
+<p>Change license to Apache 2.0.</p>
+</li></ul>
 
-<p>BinaryIO is distributed under the terms of the Apache 2.0 license. See
-NOTICE.rdoc and APACHE2.txt for details.</p>
+<h2>1.0.0 / 2009-07-04</h2>
+
+<p>This is the initial standalone release of BinaryIO, spun-off from the Ruby
+Facets library BinReadable, which came form an earlier library called
+BinaryReader by Michael Neumann.</p>
+
+<p>Changes:</p>
+<ul><li>
+<p>Happy Birthday!</p>
+</li></ul>
 </div></div>
     
     <div id="footer">
