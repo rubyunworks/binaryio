@@ -1,0 +1,9 @@
+--title "BinaryIO"
+--readme README.rdoc
+--output-dir doc
+--protected
+--private
+lib/**/*.rb
+-
+[A-Z]*.*
+

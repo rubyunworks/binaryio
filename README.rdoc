@@ -1,5 +1,11 @@
 = BinaryIO
 
+{Homepage}[http://rubyworks.github.com/binaryio] |
+{Source Code}[http://github.com/rubyworks/binaryio] |
+{Mailing List}[http://groups.google/group/rubyworks-mailinglist]
+
+
+
 == DESCRIPTION
 
 BinaryIO class is used to read and write binary data.
@@ -19,25 +25,18 @@ extension libraries in 2009, these scripts were spun off as a separate project
 and reorganized to become the BinaryIO library.
 
 
-== RESOURCES
-
-* home: http://rubyworks.github.com/binaryio
-* work: http://github.com/rubyworks/binaryio
-* mail: http://groups.google/group/rubyworks-mailinglist
-
-
 == HOW TO INSTALL
 
   $ gem install binaryio
 
 
-== LICENSE
+== COPYRIGHTS
 
-(Apache 2.0 License)
+Copyright (c) 2009 Rubyworks
 
 Copyright (c) 2003 Michael Neumann
 
-Copyright (c) 2009 Thomas Sawyer
+BinaryIO is distributed under the terms of the *FreeBSD* license.
 
-BinaryIO is distributed under the terms of the Apache 2.0 license.
-See NOTICE.rdoc and APACHE2.txt for details.
+See NOTICE.rdoc for details.
+

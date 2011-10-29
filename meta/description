@@ -1,0 +1,3 @@
+Provides a BinaryIO class as well as a reusable mixin, BinaryIO::Readable,
+which is the heart of the BinaryIO class. The mixin solely depends one method,
+read(n), which must be defined in the class/module where the module is mixed.

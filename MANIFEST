@@ -1,5 +1,6 @@
-#!mast .ruby bin lib spec test [A-Z][A-Z]*
+#!mast .ruby .yardopts bin lib man spec test [A-Z]*.*
 .ruby
+.yardopts
 lib/binaryio/byte_order.rb
 lib/binaryio/io.rb
 lib/binaryio/readable.rb
@@ -8,6 +9,5 @@ lib/binaryio/writable.rb
 lib/binaryio.rb
 test/test_byteorder.rb
 HISTORY.rdoc
-APACHE2.txt
 README.rdoc
 NOTICE.rdoc
