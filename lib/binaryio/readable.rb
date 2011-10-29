@@ -101,6 +101,8 @@ class BinaryIO
 
     alias read_uint8 read_word8
 
+    alias :read_word16_network :read_word16_big
+
     # add some short-cut functions
     %w(word16 int16 word32 int32).each do |typ|
       eval %{
