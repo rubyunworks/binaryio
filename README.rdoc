@@ -4,10 +4,10 @@
 {Source Code}[http://github.com/rubyworks/binaryio] |
 {Mailing List}[http://groups.google/group/rubyworks-mailinglist]
 
-THIS PROJECT HAS BEEN DISCONTINUED. IF YOU NEED TO WORK WITH
-BINARY DATA, BINDATA IS A MUCH BETTER ALTERNATIVE:
 
-  http://bindata.rubyforge.org/
+<b>THIS PROJECT HAS BEEN DISCONTINUED. IF YOU NEED TO WORK WITH
+BINARY DATA, {BINDATA}[http://bindata.rubyforge.org/] IS A
+MUCH BETTER ALTERNATIVE.</b>
 
 
 == DESCRIPTION
